@@ -38,6 +38,10 @@ const JERSEY_MIKES_NOTE =
 	"Added at user request as a place to review (not yet approved); previously removed from this project, re-added per new explicit request as its own distinct locations. No menu was pasted for this batch. Raw source: data/raw/charleston-2026/pasted-jersey-mikes-subs-listings-2026-07-12.json.";
 const HOME_TEAM_BBQ_NOTE =
 	"Added at user request as a place to review (not yet approved). Full food/drink menu (from the West Ashley location) was pasted and analyzed. Raw source: data/raw/charleston-2026/pasted-home-team-bbq-listing-and-menu-2026-07-12.json.";
+const NO_BULL_BURGER_BAR_NOTE =
+	'Added at user request as a place to review (not yet approved), looked up via the Google Places API from a shared Google Maps link (https://maps.app.goo.gl/6CVDaWaQTFXfuL2N8) rather than a pasted listing. No menu or allergen info analyzed yet.';
+const NO_BULL_BURGER_BAR_MENU_NOTE =
+	'Full menu pasted and analyzed. Raw source: data/raw/charleston-2026/no-bull-burger-bar-menu-2026-07-12.json. Gluten-free buns are explicitly offered for all burgers, which is a strong signal. However, several fried starters (fried pickles, pimento cheese balls, cheeseburger egg rolls, fried chicken salad topping) are hand-breaded, likely sharing fryers with non-GF items, so cross-contact is a real risk despite the GF bun option. Dairy is heavy throughout (cheeses on nearly every burger, queso, sour cream, ranch/blue cheese dressings, pimento cheese). Egg appears in mayo-based sauces and as a topping (Farmhouse, No Bull burgers). No tree nut/peanut items called out on the menu.';
 
 export const restaurants: Restaurant[] = [
 	{
@@ -1424,5 +1428,23 @@ export const restaurants: Restaurant[] = [
 		resources: [{ label: 'Website', href: 'https://hometeambbq.com', kind: 'website' }],
 		quotes: [],
 		notes: [HOME_TEAM_BBQ_NOTE]
+	},
+	{
+		slug: 'no-bull-burger-bar',
+		name: 'No Bull Burger Bar',
+		neighborhood: 'North Charleston',
+		address: '1033 E Montague Ave, North Charleston, SC 29405',
+		phone: '(843) 974-4953',
+		rating: 4.4,
+		googlePlaceId: 'ChIJrZH_6FRl_ogRAMz_nk9Ap9k',
+		type: 'Fast casual',
+		cuisineSummary: 'Burgers',
+		summary: 'Burger bar in North Charleston offering gluten-free buns for all burgers.',
+		meals: ['Lunch', 'Dinner', 'Late night'],
+		latitude: 32.8812802,
+		longitude: -79.975208,
+		resources: [{ label: 'Website', href: 'https://www.nobullburgerbar.com/', kind: 'website' }],
+		quotes: [],
+		notes: [NO_BULL_BURGER_BAR_NOTE, NO_BULL_BURGER_BAR_MENU_NOTE]
 	}
 ];

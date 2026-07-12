@@ -46,6 +46,7 @@ export type Restaurant = {
 	phone?: string;
 	email?: string;
 	rating?: number;
+	googlePlaceId?: string;
 	type: RestaurantType;
 	cuisineSummary: string;
 	summary: string;

@@ -1,0 +1,34 @@
+{
+	"restaurant": "No Bull Burger Bar",
+	"source": "User-pasted menu text",
+	"capturedAt": "2026-07-12",
+	"sections": {
+		"Starters": [
+			"Loaded Chip or Fry Bucket $15.00 — sloppy joe mix, jalapeños, queso, black beans, sour cream, tomato, French fries or hand-cut chips",
+			"Fried Pickles $12.00 — housemade, hand-breaded, dill pickles, served with Bull sauce",
+			"Pimento Cheese Balls $12.00 — fried, hand-breaded pimento cheese, served with pepper jam dipping sauce",
+			"Cheeseburger Egg Rolls $12.00 — beef blend, bacon, cheddar cheese, Bull sauce, served with pepper jam",
+			"Smoked Wings $12.00/6, $20.00/12 — Smoked, Honey Chipotle, Roots Rub, Hot"
+		],
+		"Salads": [
+			"Dressings: Honey Mustard, Blue Cheese, Ranch, Balsamic, Herbed Garlic",
+			"Burger in a Bowl $17.00 — burger patty, lettuce blend, cheddar cheese, sliced onion, diced tomatoes, housemade pickles, garlic croutons",
+			"Fried Chicken Salad $17.00 — chopped hand-breaded chicken, lettuce blend, goat cheese, pepper jam, fried onion straws, diced tomato, cucumber",
+			"Chicken Caesar Salad $16.00 — pulled chicken or turkey, romaine lettuce, parmesan, garlic croutons, Caesar dressing"
+		],
+		"Burgers": [
+			"All burgers use 2x 4oz signature blend smash patties, served with one side. Gluten free buns available.",
+			"Gambler $18.50 — bacon jam, smoked gouda, caramelized onions, bibb lettuce, garlic mayo, brioche bun",
+			"Southern Charm $18.50 — fried pimento cheese, bacon jam, Bull sauce, brioche bun",
+			"Backyard BBQ $18.50 — thick cut bacon, fried onion straws, cheddar cheese, lettuce, sliced tomato, No Bull dry rub, BBQ aioli, brioche bun",
+			"Bistro $18.50 — thick cut bacon, goat cheese, pepper jam, bibb lettuce, sliced tomato, Bull sauce, brioche bun",
+			"Hellfire $18.50 — thick cut bacon, pepper jack cheese, pepper jam, roasted jalapeños, creamy slaw, No Bull hot sauce, brioche bun",
+			"Mushroom Swiss $17.50 — sautéed mushrooms, Swiss cheese, garlic mayo, pretzel bun",
+			"Classic Smash $16.50 — American cheese, Bull sauce, pickles, brioche bun",
+			"Farmhouse $18.00 — thick cut bacon, sunny-side-up egg, cheddar cheese, bibb lettuce, garlic mayo, brioche everything bun",
+			"The Plain Jo $16.50 — American cheese, lettuce, tomato, onion, brioche bun",
+			"No Bull $23.00 — 16oz beef, thick cut bacon, sunny-side-up egg, Swiss & cheddar cheese, mushrooms, caramelized onion, pickles, garlic mayo, Bull sauce, brioche bun",
+			"Black Bean Burger $16.50"
+		]
+	}
+}
