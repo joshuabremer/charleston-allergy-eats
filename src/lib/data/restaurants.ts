@@ -77,22 +77,6 @@ export const restaurants: Restaurant[] = [
 		notes: [NOT_YET_RESEARCHED_NOTE, RAW_SOURCE_NOTE]
 	},
 	{
-		slug: 'chick-fil-a-rivers-ave',
-		name: 'Chick-fil-A',
-		neighborhood: 'North Charleston',
-		address: '7616 Rivers Ave, North Charleston, SC 29406',
-		phone: '(843) 797-0122',
-		type: 'Fast food',
-		cuisineSummary: 'Fast food chicken',
-		summary: 'Chick-fil-A on Rivers Ave; listed as temporarily closed as of the latest pasted listing.',
-		meals: ['Lunch', 'Dinner'],
-		latitude: 32.9410788,
-		longitude: -80.0396726,
-		resources: [],
-		quotes: [],
-		notes: [NOT_YET_RESEARCHED_NOTE, TEMPORARILY_CLOSED_NOTE, CHICK_FIL_A_UPDATE_NOTE]
-	},
-	{
 		slug: 'chick-fil-a-dorchester-rd',
 		name: 'Chick-fil-A',
 		neighborhood: 'North Charleston',
