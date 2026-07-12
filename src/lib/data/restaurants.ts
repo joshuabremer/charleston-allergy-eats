@@ -153,27 +153,6 @@ export const restaurants: Restaurant[] = [
 		notes: [NOT_YET_RESEARCHED_NOTE, CHICK_FIL_A_UPDATE_NOTE]
 	},
 	{
-		slug: 'jimmy-johns-north-charleston',
-		name: "Jimmy John's",
-		neighborhood: 'North Charleston',
-		address: 'North Charleston, SC (exact address unconfirmed)',
-		phone: '(843) 225-8083',
-		type: 'Fast casual',
-		cuisineSummary: 'Sandwiches',
-		summary: 'Fast casual sandwich shop.',
-		meals: ['Lunch', 'Dinner'],
-		latitude: 32.8546,
-		longitude: -79.9748,
-		resources: [],
-		quotes: [
-			{
-				quote: 'Super Clean, super friendly, fast, they hooked up my sandwiches too!',
-				sourceLabel: 'Google review'
-			}
-		],
-		notes: [NOT_YET_RESEARCHED_NOTE, APPROX_LOCATION_NOTE, RAW_SOURCE_NOTE]
-	},
-	{
 		slug: 'jimmy-johns-westedge',
 		name: "Jimmy John's",
 		neighborhood: 'Charleston (WestEdge)',
@@ -216,73 +195,52 @@ export const restaurants: Restaurant[] = [
 		notes: [NOT_YET_RESEARCHED_NOTE, RAW_SOURCE_NOTE]
 	},
 	{
-		slug: 'jimmy-johns-mt-pleasant',
-		name: "Jimmy John's",
-		neighborhood: 'Mt Pleasant',
-		address: 'Mt Pleasant, SC (exact address unconfirmed)',
-		phone: '(843) 388-7012',
-		type: 'Fast casual',
-		cuisineSummary: 'Sandwiches',
-		summary: 'Fast casual sandwich shop.',
-		meals: ['Lunch', 'Dinner'],
-		latitude: 32.8323,
-		longitude: -79.8284,
-		resources: [],
-		quotes: [
-			{
-				quote: 'Ordered takeout online, everything came out perfectly.',
-				sourceLabel: 'Google review'
-			}
-		],
-		notes: [NOT_YET_RESEARCHED_NOTE, APPROX_LOCATION_NOTE, RAW_SOURCE_NOTE]
-	},
-	{
-		slug: 'chipotle-north-charleston-1',
+		slug: 'chipotle-centre-pointe',
 		name: 'Chipotle Mexican Grill',
 		neighborhood: 'North Charleston',
-		address: 'North Charleston, SC (exact address unconfirmed)',
+		address: '4953 Centre Pointe Dr, North Charleston, SC 29418',
 		phone: '(843) 747-6707',
 		type: 'Fast casual',
 		cuisineSummary: 'Mexican',
 		summary: 'Fast casual Mexican grill with dine-in, takeout, and no-contact delivery.',
 		meals: ['Lunch', 'Dinner'],
-		latitude: 32.8546,
-		longitude: -79.9748,
+		latitude: 32.8688,
+		longitude: -80.0116,
 		resources: [],
 		quotes: [],
-		notes: [NOT_YET_RESEARCHED_NOTE, APPROX_LOCATION_NOTE, RAW_SOURCE_NOTE]
+		notes: [NOT_YET_RESEARCHED_NOTE, RAW_SOURCE_NOTE]
 	},
 	{
-		slug: 'chipotle-north-charleston-2',
+		slug: 'chipotle-rivers-ave',
 		name: 'Chipotle Mexican Grill',
 		neighborhood: 'North Charleston',
-		address: 'North Charleston, SC (exact address unconfirmed)',
+		address: '7398 Rivers Ave #102, North Charleston, SC 29406',
 		phone: '(843) 553-2106',
 		type: 'Fast casual',
 		cuisineSummary: 'Mexican',
 		summary: 'Fast casual Mexican grill with dine-in, takeout, and no-contact delivery.',
 		meals: ['Lunch', 'Dinner'],
-		latitude: 32.8546,
-		longitude: -79.9748,
+		latitude: 32.936993,
+		longitude: -80.043948,
 		resources: [],
 		quotes: [],
-		notes: [NOT_YET_RESEARCHED_NOTE, APPROX_LOCATION_NOTE, RAW_SOURCE_NOTE]
+		notes: [NOT_YET_RESEARCHED_NOTE, RAW_SOURCE_NOTE]
 	},
 	{
-		slug: 'chipotle-charleston-area-3',
+		slug: 'chipotle-dorchester-rd',
 		name: 'Chipotle Mexican Grill',
-		neighborhood: 'Charleston area',
-		address: 'Charleston, SC area (exact address unconfirmed)',
+		neighborhood: 'North Charleston',
+		address: '8601 Dorchester Rd, North Charleston, SC 29420',
 		phone: '(854) 214-6932',
 		type: 'Fast casual',
 		cuisineSummary: 'Mexican',
 		summary: 'Fast casual Mexican grill with dine-in, drive-through, and no-contact delivery.',
 		meals: ['Lunch', 'Dinner'],
-		latitude: 32.8546,
-		longitude: -79.9748,
+		latitude: 33.04,
+		longitude: -80.17,
 		resources: [],
 		quotes: [],
-		notes: [NOT_YET_RESEARCHED_NOTE, APPROX_LOCATION_NOTE, RAW_SOURCE_NOTE]
+		notes: [NOT_YET_RESEARCHED_NOTE, RAW_SOURCE_NOTE]
 	},
 	{
 		slug: 'chipotle-king-street',
@@ -320,62 +278,62 @@ export const restaurants: Restaurant[] = [
 		slug: 'chipotle-ladson',
 		name: 'Chipotle Mexican Grill',
 		neighborhood: 'Ladson',
-		address: 'Ladson, SC (exact address unconfirmed)',
+		address: '3676 Ladson Rd, Ladson, SC 29456',
 		phone: '(843) 376-6818',
 		type: 'Fast casual',
 		cuisineSummary: 'Mexican',
 		summary: 'Fast casual Mexican grill with dine-in, takeout, and delivery.',
 		meals: ['Lunch', 'Dinner'],
-		latitude: 32.9857,
-		longitude: -80.1101,
+		latitude: 32.98,
+		longitude: -80.11,
 		resources: [],
 		quotes: [],
-		notes: [NOT_YET_RESEARCHED_NOTE, APPROX_LOCATION_NOTE, RAW_SOURCE_NOTE]
+		notes: [NOT_YET_RESEARCHED_NOTE, RAW_SOURCE_NOTE]
 	},
 	{
 		slug: 'chipotle-goose-creek',
 		name: 'Chipotle Mexican Grill',
 		neighborhood: 'Goose Creek',
-		address: 'Goose Creek, SC (exact address unconfirmed)',
+		address: '220 Saint James Ave, Goose Creek, SC 29445',
 		phone: '(854) 300-4182',
 		type: 'Fast casual',
 		cuisineSummary: 'Mexican',
 		summary: 'Fast casual Mexican grill with dine-in, drive-through, and no-contact delivery.',
 		meals: ['Lunch', 'Dinner'],
-		latitude: 33.0007,
-		longitude: -80.0331,
+		latitude: 32.9997,
+		longitude: -80.0128,
 		resources: [],
 		quotes: [],
-		notes: [NOT_YET_RESEARCHED_NOTE, APPROX_LOCATION_NOTE, RAW_SOURCE_NOTE]
+		notes: [NOT_YET_RESEARCHED_NOTE, RAW_SOURCE_NOTE]
 	},
 	{
-		slug: 'chipotle-mt-pleasant',
+		slug: 'chipotle-n-hwy-17-mt-pleasant',
 		name: 'Chipotle Mexican Grill',
 		neighborhood: 'Mt Pleasant',
-		address: 'Mt Pleasant, SC (exact address unconfirmed)',
+		address: '1509 N Hwy 17, Mt Pleasant, SC 29464',
 		phone: '(843) 856-1170',
 		type: 'Fast casual',
 		cuisineSummary: 'Mexican',
 		summary: 'Fast casual Mexican grill with dine-in, takeout, and no-contact delivery.',
 		meals: ['Lunch', 'Dinner'],
-		latitude: 32.8323,
-		longitude: -79.8284,
+		latitude: 32.83887,
+		longitude: -79.82435,
 		resources: [],
 		quotes: [],
-		notes: [NOT_YET_RESEARCHED_NOTE, APPROX_LOCATION_NOTE, RAW_SOURCE_NOTE]
+		notes: [NOT_YET_RESEARCHED_NOTE, RAW_SOURCE_NOTE]
 	},
 	{
 		slug: 'famularis-pizzeria-hanahan',
 		name: "Famulari's Pizzeria: Hanahan",
 		neighborhood: 'Hanahan',
-		address: 'Hanahan, SC (exact address unconfirmed)',
+		address: '1000 Tanner Ford Blvd, Hanahan, SC 29410',
 		phone: '(843) 572-7105',
 		type: 'Sit-down',
 		cuisineSummary: 'Pizzeria',
 		summary: 'Local pizzeria chain location in Hanahan.',
 		meals: ['Lunch', 'Dinner'],
-		latitude: 32.9257,
-		longitude: -80.0087,
+		latitude: 32.936401,
+		longitude: -80.007437,
 		resources: [],
 		quotes: [
 			{
@@ -383,7 +341,7 @@ export const restaurants: Restaurant[] = [
 				sourceLabel: 'Google review'
 			}
 		],
-		notes: [NOT_YET_RESEARCHED_NOTE, APPROX_LOCATION_NOTE, RAW_SOURCE_NOTE]
+		notes: [NOT_YET_RESEARCHED_NOTE, RAW_SOURCE_NOTE]
 	},
 	{
 		slug: 'famularis-pizzeria-west-ashley',
@@ -421,17 +379,17 @@ export const restaurants: Restaurant[] = [
 		slug: 'famularis-pizzeria-oakbrook',
 		name: "Famulari's Pizzeria: Oakbrook",
 		neighborhood: 'Summerville (Oakbrook)',
-		address: 'Summerville, SC (Oakbrook area; exact address unconfirmed)',
+		address: '1704 Old Trolley Rd, Summerville, SC 29485',
 		phone: '(843) 832-2222',
 		type: 'Sit-down',
 		cuisineSummary: 'Pizzeria',
 		summary: 'Local pizzeria chain location in the Oakbrook area of Summerville.',
 		meals: ['Lunch', 'Dinner'],
-		latitude: 32.9822,
-		longitude: -80.1794,
+		latitude: 32.9597583,
+		longitude: -80.1654688,
 		resources: [],
 		quotes: [{ quote: 'Twenty minutes away but totally worth the drive', sourceLabel: 'Google review' }],
-		notes: [NOT_YET_RESEARCHED_NOTE, APPROX_LOCATION_NOTE, RAW_SOURCE_NOTE]
+		notes: [NOT_YET_RESEARCHED_NOTE, RAW_SOURCE_NOTE]
 	},
 	{
 		slug: 'fams-brewing-co',
@@ -453,17 +411,17 @@ export const restaurants: Restaurant[] = [
 		slug: 'famularis-pizzeria-cane-bay',
 		name: "Famulari's Pizzeria: Cane Bay",
 		neighborhood: 'Summerville (Cane Bay)',
-		address: 'Summerville, SC (Cane Bay area; exact address unconfirmed)',
+		address: '1724 State Road, Summerville, SC 29486',
 		phone: '(843) 809-5423',
 		type: 'Sit-down',
 		cuisineSummary: 'Pizzeria',
 		summary: 'Local pizzeria chain location in the Cane Bay area of Summerville.',
 		meals: ['Lunch', 'Dinner'],
-		latitude: 33.121,
-		longitude: -80.181,
+		latitude: 33.1104,
+		longitude: -80.1605,
 		resources: [],
 		quotes: [{ quote: 'Complete transformation from the previous management.', sourceLabel: 'Google review' }],
-		notes: [NOT_YET_RESEARCHED_NOTE, APPROX_LOCATION_NOTE, RAW_SOURCE_NOTE]
+		notes: [NOT_YET_RESEARCHED_NOTE, RAW_SOURCE_NOTE]
 	},
 	{
 		slug: 'johnnys-garage',
@@ -517,30 +475,30 @@ export const restaurants: Restaurant[] = [
 		slug: 'santis-mount-pleasant',
 		name: "Santi's Mount Pleasant",
 		neighborhood: 'Mt Pleasant',
-		address: 'Mt Pleasant, SC (exact address unconfirmed)',
+		address: '1471 Ben Sawyer Blvd, Mt Pleasant, SC 29464',
 		rating: 4.1,
 		type: 'Sit-down',
 		cuisineSummary: 'Mexican',
 		summary: 'Mexican restaurant with dine-in, takeout, and delivery.',
 		meals: ['Lunch', 'Dinner'],
-		latitude: 32.8323,
-		longitude: -79.8284,
+		latitude: 32.782562,
+		longitude: -79.871391,
 		resources: [],
 		quotes: [],
-		notes: [NOT_YET_RESEARCHED_NOTE, APPROX_LOCATION_NOTE, RAW_SOURCE_NOTE]
+		notes: [NOT_YET_RESEARCHED_NOTE, RAW_SOURCE_NOTE]
 	},
 	{
-		slug: 'kickin-chicken-charleston-1',
+		slug: 'kickin-chicken-sam-rittenberg',
 		name: "The Kickin' Chicken",
-		neighborhood: 'Charleston',
-		address: 'Charleston, SC (exact address unconfirmed)',
+		neighborhood: 'West Ashley',
+		address: '1179 Sam Rittenberg Blvd, Charleston, SC 29407',
 		phone: '(843) 766-5292',
 		type: 'Fast casual',
 		cuisineSummary: 'Southern-style chicken',
 		summary: 'Fast casual chicken restaurant with dine-in, curbside pickup, and delivery.',
 		meals: ['Lunch', 'Dinner'],
-		latitude: 32.7765,
-		longitude: -79.9311,
+		latitude: 32.8216592,
+		longitude: -79.9913057,
 		resources: [
 			{
 				label: 'Menu',
@@ -569,20 +527,20 @@ export const restaurants: Restaurant[] = [
 				sourceLabel: 'KC_Menu_Spring.pdf allergy disclaimer'
 			}
 		],
-		notes: [KICKIN_CHICKEN_NOTE, KICKIN_CHICKEN_MENU_NOTE, APPROX_LOCATION_NOTE]
+		notes: [KICKIN_CHICKEN_NOTE, KICKIN_CHICKEN_MENU_NOTE]
 	},
 	{
-		slug: 'kickin-chicken-charleston-2',
+		slug: 'kickin-chicken-romney-st',
 		name: "The Kickin' Chicken",
-		neighborhood: 'Charleston',
-		address: 'Charleston, SC (exact address unconfirmed)',
+		neighborhood: 'Downtown Charleston',
+		address: '45 Romney St Ste 300, Charleston, SC 29403',
 		phone: '(843) 805-5020',
 		type: 'Fast casual',
 		cuisineSummary: 'Southern-style chicken',
 		summary: 'Fast casual chicken restaurant with dine-in, takeout, and delivery.',
 		meals: ['Lunch', 'Dinner'],
-		latitude: 32.7854,
-		longitude: -79.9399,
+		latitude: 32.80333,
+		longitude: -79.94502,
 		resources: [
 			{
 				label: 'Menu',
@@ -611,20 +569,20 @@ export const restaurants: Restaurant[] = [
 				sourceLabel: 'KC_Menu_Spring.pdf allergy disclaimer'
 			}
 		],
-		notes: [KICKIN_CHICKEN_NOTE, KICKIN_CHICKEN_MENU_NOTE, APPROX_LOCATION_NOTE]
+		notes: [KICKIN_CHICKEN_NOTE, KICKIN_CHICKEN_MENU_NOTE]
 	},
 	{
-		slug: 'kickin-chicken-johns-island',
+		slug: 'kickin-chicken-bees-ferry',
 		name: "The Kickin' Chicken",
-		neighborhood: 'Johns Island',
-		address: 'Johns Island, SC (exact address unconfirmed)',
+		neighborhood: 'West Ashley (Bees Ferry)',
+		address: '1184 Bees Ferry Rd Unit 101, Charleston, SC 29414',
 		phone: '(843) 990-5711',
 		type: 'Fast casual',
 		cuisineSummary: 'Southern-style chicken',
 		summary: 'Fast casual chicken restaurant with dine-in, takeout, and delivery.',
 		meals: ['Lunch', 'Dinner'],
-		latitude: 32.706,
-		longitude: -80.0392,
+		latitude: 32.832965,
+		longitude: -80.055593,
 		resources: [
 			{
 				label: 'Menu',
@@ -653,20 +611,20 @@ export const restaurants: Restaurant[] = [
 				sourceLabel: 'KC_Menu_Spring.pdf allergy disclaimer'
 			}
 		],
-		notes: [KICKIN_CHICKEN_NOTE, KICKIN_CHICKEN_MENU_NOTE, APPROX_LOCATION_NOTE]
+		notes: [KICKIN_CHICKEN_NOTE, KICKIN_CHICKEN_MENU_NOTE]
 	},
 	{
-		slug: 'kickin-chicken-mount-pleasant',
+		slug: 'kickin-chicken-w-coleman-blvd',
 		name: "The Kickin' Chicken",
 		neighborhood: 'Mt Pleasant',
-		address: 'Mt Pleasant, SC (exact address unconfirmed)',
+		address: '349 W Coleman Blvd, Mt Pleasant, SC 29464',
 		phone: '(843) 881-8734',
 		type: 'Fast casual',
 		cuisineSummary: 'Southern-style chicken',
 		summary: 'Fast casual chicken restaurant with dine-in, curbside pickup, and delivery.',
 		meals: ['Lunch', 'Dinner'],
-		latitude: 32.8323,
-		longitude: -79.8284,
+		latitude: 32.7865,
+		longitude: -79.8853,
 		resources: [
 			{
 				label: 'Menu',
@@ -695,20 +653,20 @@ export const restaurants: Restaurant[] = [
 				sourceLabel: 'KC_Menu_Spring.pdf allergy disclaimer'
 			}
 		],
-		notes: [KICKIN_CHICKEN_NOTE, KICKIN_CHICKEN_MENU_NOTE, APPROX_LOCATION_NOTE]
+		notes: [KICKIN_CHICKEN_NOTE, KICKIN_CHICKEN_MENU_NOTE]
 	},
 	{
-		slug: 'kickin-chicken-summerville-1',
+		slug: 'kickin-chicken-dorchester-rd',
 		name: "The Kickin' Chicken",
 		neighborhood: 'Summerville',
-		address: 'Summerville, SC (exact address unconfirmed)',
+		address: '9800 Dorchester Rd #8545, Summerville, SC 29485',
 		phone: '(843) 225-3535',
 		type: 'Fast casual',
 		cuisineSummary: 'Southern-style chicken',
 		summary: 'Fast casual chicken restaurant with dine-in, curbside pickup, and delivery.',
 		meals: ['Lunch', 'Dinner'],
-		latitude: 33.0185,
-		longitude: -80.1756,
+		latitude: 32.9483,
+		longitude: -80.1765,
 		resources: [
 			{
 				label: 'Menu',
@@ -737,20 +695,20 @@ export const restaurants: Restaurant[] = [
 				sourceLabel: 'KC_Menu_Spring.pdf allergy disclaimer'
 			}
 		],
-		notes: [KICKIN_CHICKEN_NOTE, KICKIN_CHICKEN_MENU_NOTE, APPROX_LOCATION_NOTE]
+		notes: [KICKIN_CHICKEN_NOTE, KICKIN_CHICKEN_MENU_NOTE]
 	},
 	{
-		slug: 'kickin-chicken-summerville-2',
+		slug: 'kickin-chicken-n-main-st',
 		name: "The Kickin' Chicken",
 		neighborhood: 'Summerville',
-		address: 'Summerville, SC (exact address unconfirmed)',
+		address: '800 N Main St, Summerville, SC 29483',
 		phone: '(843) 875-6998',
 		type: 'Fast casual',
 		cuisineSummary: 'Southern-style chicken',
 		summary: 'Fast casual chicken restaurant with dine-in and drive-through.',
 		meals: ['Lunch', 'Dinner'],
-		latitude: 33.0287,
-		longitude: -80.1893,
+		latitude: 33.02804,
+		longitude: -80.17531,
 		resources: [
 			{
 				label: 'Menu',
@@ -779,7 +737,7 @@ export const restaurants: Restaurant[] = [
 				sourceLabel: 'KC_Menu_Spring.pdf allergy disclaimer'
 			}
 		],
-		notes: [KICKIN_CHICKEN_NOTE, KICKIN_CHICKEN_MENU_NOTE, APPROX_LOCATION_NOTE]
+		notes: [KICKIN_CHICKEN_NOTE, KICKIN_CHICKEN_MENU_NOTE]
 	},
 	{
 		slug: 'benny-rinaldis',
