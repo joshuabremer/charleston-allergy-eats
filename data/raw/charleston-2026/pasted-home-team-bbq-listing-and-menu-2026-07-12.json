@@ -1,0 +1,11 @@
+{
+	"source": "User-pasted Google Maps search results plus the printed food/drink menu for Home Team BBQ.",
+	"capturedAt": "2026-07-12",
+	"locations": [
+		{ "address": "1205 Ashley River Rd, Charleston, SC 29407 (West Ashley)", "rating": "4.6 (4,736)", "phone": "(843) 225-7427" },
+		{ "address": "126 Williman St, Charleston, SC (Downtown)", "rating": "4.7 (103)", "phone": "(843) 225-7427 ext. 4" },
+		{ "address": "3563 US-17, Mt Pleasant, SC 29466", "rating": "4.4 (555)", "phone": "(843) 225-7427" },
+		{ "address": "2209 Middle St, Sullivan's Island, SC", "rating": "4.7 (1,684)", "phone": "(843) 225-7427" }
+	],
+	"menuNotes": "Full food/drink menu pasted from the West Ashley location's printed menu. Menu prints an explicit allergen disclaimer: \"Nuts, Dairy, Gluten, Allium, Fish and Shell Fish are all prepared in our kitchen, Please alert our staff to any Allergies, Dietary needs or Restrictions.\" Black beans can be substituted for meat in any taco; tacos can be prepared vegetarian. Most sandwiches/sliders use King's Hawaiian buns (contain dairy/egg/gluten). No dedicated gluten-free or dairy-free menu section."
+}

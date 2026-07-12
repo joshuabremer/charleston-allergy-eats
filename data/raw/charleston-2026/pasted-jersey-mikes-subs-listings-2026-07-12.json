@@ -1,0 +1,27 @@
+{
+	"source": "User-pasted Google Maps search results for Jersey Mike's Subs locations across the Charleston metro area.",
+	"capturedAt": "2026-07-12",
+	"note": "Jersey Mike's Subs was previously removed from this project at user request, then re-added per explicit new user request ('Add jersey mike's to check out') as its own distinct locations, not merged as a single chain entry.",
+	"locations": [
+		{ "address": "5070 International Blvd #127, North Charleston, SC", "rating": "4.3 (372)", "phone": "(843) 410-1406" },
+		{ "address": "7225 Rivers Ave Ste. 203, North Charleston, SC (across from Target)", "rating": "4.3 (535)", "phone": "(843) 414-7371" },
+		{ "address": "1975 Magwood Dr, North Charleston, SC", "rating": "4.2 (351)", "phone": "(843) 459-2153" },
+		{ "address": "8983 University Blvd #101, North Charleston, SC", "rating": "4.5 (364)", "phone": "(843) 793-2483" },
+		{ "address": "595 King St Ste 131, Charleston, SC", "rating": "3.9 (108)", "phone": "(843) 278-8555" },
+		{ "address": "3875 W Ashley Cir Suite 410, Charleston, SC", "rating": "4.3 (405)", "phone": "(843) 628-0600" },
+		{ "address": "1145 Savannah Hwy Suite 205, Charleston, SC", "rating": "4.0 (23)", "phone": "(843) 261-5430" },
+		{ "address": "520 Folly Rd Ste 20, Charleston, SC", "rating": "4.1 (214)", "phone": "(843) 718-1606" },
+		{ "address": "9500 Dorchester Rd Ste 186, North Charleston, SC", "rating": "4.3 (249)", "phone": "(843) 832-8005" },
+		{ "address": "1721 Clements Ferry Rd Bldg. A-1, Unit 112, Cainhoy, SC", "rating": "4.4 (125)", "phone": "(843) 998-7474" },
+		{ "address": "217-A St James Ave, St. James Plaza, James Island, SC", "rating": "4.3 (671)", "phone": "(843) 569-2800" },
+		{ "address": "1907 N Hwy 17 #101, Mt Pleasant, SC", "rating": "4.4 (374)", "phone": "(843) 388-6300" },
+		{ "address": "1800 Produce Ln B, Charleston, SC", "rating": "4.0 (51)", "phone": "(843) 278-5497" },
+		{ "address": "280D West Coleman Blvd, Houston Northcutt Blvd, Mt Pleasant, SC", "rating": "4.4 (152)", "phone": "(843) 881-7996" },
+		{ "address": "3010 S Morgans Point Rd Building 33A, Unit C, Mt Pleasant, SC", "rating": "4.3 (212)", "phone": "(843) 388-7456" },
+		{ "address": "1417 Folly Rd Ste 408, Charleston, SC", "rating": "3.6 (35)", "phone": "(843) 574-8141" },
+		{ "address": "310 Azalea Square Blvd Outparcel #11, Unit B, Summerville, SC", "rating": "4.4 (628)", "phone": "(843) 875-3480" },
+		{ "address": "2509 N Main St Ste B, Summerville, SC", "rating": "4.2 (105)", "phone": "(843) 302-0302" },
+		{ "address": "613 Old Trolley Rd Ste A, Summerville, SC", "rating": "4.3 (89)", "phone": "(843) 376-4107" }
+	],
+	"analysisNotes": "Listing-only paste (dine-in/takeout/curbside/delivery options vary by location, all typical for the chain). No menu was pasted for this batch; added as ready-to-review entries pending allergy-accommodation research."
+}
