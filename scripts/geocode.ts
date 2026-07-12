@@ -16,26 +16,19 @@
  * entry whose stored latitude/longitude is more than half a mile from the freshly geocoded
  * result, so mistakes can be caught and fixed.
  */
-import { existsSync, readFileSync } from 'node:fs';
+import { readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
+import { requireGoogleMapsApiKey } from './lib/env.ts';
 
 const GEOCODE_URL = 'https://maps.googleapis.com/maps/api/geocode/json';
 const RESTAURANTS_FILE = fileURLToPath(
 	new URL('../src/lib/data/restaurants.ts', import.meta.url)
 );
-const ENV_FILE = fileURLToPath(new URL('../.env', import.meta.url));
 const VERIFY_FLAG_MILES = 0.5;
 const REQUEST_DELAY_MS = 100;
 
 async function main() {
-	loadEnvFile();
-	const apiKey = process.env.GOOGLE_MAPS_API_KEY;
-	if (!apiKey) {
-		console.error(
-			'Missing GOOGLE_MAPS_API_KEY. Copy .env.example to .env and set your Google Geocoding API key.'
-		);
-		process.exit(1);
-	}
+	const apiKey = requireGoogleMapsApiKey();
 
 	const args = process.argv.slice(2);
 
@@ -66,26 +59,6 @@ type GeocodeResult = {
 	longitude: number;
 	formattedAddress: string;
 };
-
-/** Reads KEY=VALUE pairs from .env (if present) into process.env, without overwriting existing values. */
-function loadEnvFile() {
-	if (!existsSync(ENV_FILE)) return;
-
-	const lines = readFileSync(ENV_FILE, 'utf8').split('\n');
-	for (const line of lines) {
-		const trimmed = line.trim();
-		if (!trimmed || trimmed.startsWith('#')) continue;
-
-		const equalsIndex = trimmed.indexOf('=');
-		if (equalsIndex === -1) continue;
-
-		const key = trimmed.slice(0, equalsIndex).trim();
-		const value = trimmed.slice(equalsIndex + 1).trim().replace(/^['"]|['"]$/g, '');
-		if (key && process.env[key] === undefined) {
-			process.env[key] = value;
-		}
-	}
-}
 
 /** Queries the Google Geocoding API for a single address and returns the best-guess coordinates. */
 async function geocodeAddress(address: string, apiKey: string): Promise<GeocodeResult | null> {
