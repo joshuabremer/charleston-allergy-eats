@@ -4,6 +4,7 @@
 	import { base } from '$app/paths';
 	import RestaurantMap from '$lib/components/RestaurantMap.svelte';
 	import { restaurants } from '$lib/data/restaurants';
+	import { distanceInMiles, geoStore } from '$lib/geo.svelte';
 	import type { PageData } from './$types';
 	import {
 		DECISION_STATES,
@@ -49,9 +50,19 @@
 	};
 
 	const visiblePlaces = $derived.by(() => restaurants.filter(matchesFilters));
-	const sortedVisiblePlaces = $derived.by(() =>
-		[...visiblePlaces].sort((left, right) => left.name.localeCompare(right.name))
-	);
+	const sortedVisiblePlaces = $derived.by(() => {
+		const position = geoStore.position;
+
+		if (!position) {
+			return [...visiblePlaces].sort((left, right) => left.name.localeCompare(right.name));
+		}
+
+		return [...visiblePlaces].sort(
+			(left, right) =>
+				distanceInMiles(position[0], position[1], left.latitude, left.longitude) -
+				distanceInMiles(position[0], position[1], right.latitude, right.longitude)
+		);
+	});
 	const isMobileLayout = $derived(viewportWidth <= 800);
 	const activeSelectedSlug = $derived(isMobileLayout ? mobileSelectedSlug : hoveredSlug);
 	const selectedMobileRestaurant = $derived.by(() => {
@@ -67,6 +78,18 @@
 
 	$effect(() => {
 		reviewState = loadUserReviews(data.reviewState);
+	});
+
+	$effect(() => {
+		if (!browser) {
+			return;
+		}
+
+		geoStore.start();
+
+		return () => {
+			geoStore.stop();
+		};
 	});
 
 	$effect(() => {
@@ -140,13 +163,18 @@
 	});
 
 	$effect(() => {
-		if (visiblePlaces.length === 0) {
+		if (sortedVisiblePlaces.length === 0) {
 			mobileSelectedSlug = null;
 			return;
 		}
 
-		if (mobileSelectedSlug && !visiblePlaces.some((restaurant) => restaurant.slug === mobileSelectedSlug)) {
-			mobileSelectedSlug = null;
+		if (!isMobileLayout) {
+			return;
+		}
+
+		if (!mobileSelectedSlug || !sortedVisiblePlaces.some((restaurant) => restaurant.slug === mobileSelectedSlug)) {
+			// Default to the closest restaurant (first in distance-sorted order).
+			mobileSelectedSlug = sortedVisiblePlaces[0].slug;
 		}
 	});
 
@@ -218,6 +246,39 @@
 		event.preventDefault();
 		mobileSelectedSlug = slug;
 		mobileSidebarOpen = false;
+	}
+
+	const SWIPE_THRESHOLD_PX = 50;
+	let touchStartX: number | null = null;
+
+	function handleSelectionTouchStart(event: TouchEvent) {
+		touchStartX = event.touches[0]?.clientX ?? null;
+	}
+
+	function handleSelectionTouchEnd(event: TouchEvent) {
+		if (touchStartX === null || sortedVisiblePlaces.length === 0) {
+			touchStartX = null;
+			return;
+		}
+
+		const touchEndX = event.changedTouches[0]?.clientX ?? touchStartX;
+		const deltaX = touchEndX - touchStartX;
+		touchStartX = null;
+
+		if (Math.abs(deltaX) < SWIPE_THRESHOLD_PX) {
+			return;
+		}
+
+		const currentIndex = sortedVisiblePlaces.findIndex(
+			(restaurant) => restaurant.slug === mobileSelectedSlug
+		);
+		const baseIndex = currentIndex === -1 ? 0 : currentIndex;
+		// Swipe left -> next-closest restaurant, swipe right -> previous.
+		const direction = deltaX < 0 ? 1 : -1;
+		const nextIndex =
+			(baseIndex + direction + sortedVisiblePlaces.length) % sortedVisiblePlaces.length;
+
+		mobileSelectedSlug = sortedVisiblePlaces[nextIndex].slug;
 	}
 
 	function restaurantHref(slug: string) {
@@ -640,7 +701,13 @@
 				showCurrentLocation
 			/>
 
-			<div class="mobile-selection-sheet">
+			<div
+				class="mobile-selection-sheet"
+				role="group"
+				aria-label="Selected restaurant overview"
+				ontouchstart={handleSelectionTouchStart}
+				ontouchend={handleSelectionTouchEnd}
+			>
 				{#if selectedMobileRestaurant}
 					<section class="mobile-selection-card">
 						<div class="place-card-top">
