@@ -18,6 +18,7 @@
 ## Curation workflow
 
 - When the user pastes a new restaurant listing/menu, save the raw text under `data/raw/charleston-2026/` first, then add a curated entry to `restaurants.ts` starting at `ready-to-review`.
+- Whenever a restaurant and its menu are provided together (or a menu is added/updated for an existing restaurant), always analyze the menu for allergy accommodations and update that restaurant's menu analysis (`menuFlags` / notes) in the same change — don't just save the raw menu and leave the analysis for later.
 - Only flip a restaurant to `approved` when the user explicitly says so (e.g. "X is approved").
 - Do not add restaurants to the curated list unless the user provides them or explicitly asks.
 
