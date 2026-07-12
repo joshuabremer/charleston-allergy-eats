@@ -41,7 +41,7 @@ const HOME_TEAM_BBQ_NOTE =
 const NO_BULL_BURGER_BAR_NOTE =
 	'Added at user request as a place to review (not yet approved), looked up via the Google Places API from a shared Google Maps link (https://maps.app.goo.gl/6CVDaWaQTFXfuL2N8) rather than a pasted listing. No menu or allergen info analyzed yet.';
 const NO_BULL_BURGER_BAR_MENU_NOTE =
-	'Full menu pasted and analyzed. Raw source: data/raw/charleston-2026/no-bull-burger-bar-menu-2026-07-12.json. Gluten-free buns are explicitly offered for all burgers, which is a strong signal. However, several fried starters (fried pickles, pimento cheese balls, cheeseburger egg rolls, fried chicken salad topping) are hand-breaded, likely sharing fryers with non-GF items, so cross-contact is a real risk despite the GF bun option. Dairy is heavy throughout (cheeses on nearly every burger, queso, sour cream, ranch/blue cheese dressings, pimento cheese). Egg appears in mayo-based sauces and as a topping (Farmhouse, No Bull burgers). No tree nut/peanut items called out on the menu.';
+	'Full menu pasted and analyzed; see menu analysis on the Website link. Raw source: data/raw/charleston-2026/no-bull-burger-bar-menu-2026-07-12.json.';
 
 export const restaurants: Restaurant[] = [
 	{
@@ -1443,7 +1443,23 @@ export const restaurants: Restaurant[] = [
 		meals: ['Lunch', 'Dinner', 'Late night'],
 		latitude: 32.8812802,
 		longitude: -79.975208,
-		resources: [{ label: 'Website', href: 'https://www.nobullburgerbar.com/', kind: 'website' }],
+		resources: [
+			{
+				label: 'Website',
+				href: 'https://www.nobullburgerbar.com/',
+				kind: 'website',
+				menuFlags: [
+					{
+						tone: 'green',
+						note: 'No tree nut ingredients (walnuts, pecans, cashews, pistachios, hazelnuts, etc.) appear anywhere on the menu.'
+					},
+					{
+						tone: 'yellow',
+						note: 'Fried starters (fried pickles, pimento cheese balls, cheeseburger egg rolls, fried chicken salad topping) are hand-breaded and likely share fryers; confirm with staff whether any tree-nut-containing item (e.g. a nut-topped dessert) is fried in the same oil.'
+					}
+				]
+			}
+		],
 		quotes: [],
 		notes: [NO_BULL_BURGER_BAR_NOTE, NO_BULL_BURGER_BAR_MENU_NOTE]
 	}

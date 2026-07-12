@@ -30,7 +30,7 @@
 
 ## Allergy scope
 
-- For this project, do not treat peanuts or almonds as allergy red flags.
+- The allergy this project cares about is **tree nuts** (e.g. walnuts, pecans, cashews, pistachios, hazelnuts). Peanuts and almonds are fine and should not be flagged as red/yellow flags or called out as a concern.
 
 ## Menu analysis conventions
 
