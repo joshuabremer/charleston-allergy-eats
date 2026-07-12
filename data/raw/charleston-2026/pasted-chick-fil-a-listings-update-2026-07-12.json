@@ -1,0 +1,90 @@
+{
+  "source": "User-pasted Google Maps search/listing results (Chick-fil-A locations update)",
+  "capturedAt": "2026-07-12",
+  "notes": [
+    "User confirmed the 5500 International Blvd delivery-only location is no longer listed and asked for it to be removed.",
+    "User confirmed the Centre Pointe location (4926 Centre Pointe Dr) is definitely there and open.",
+    "2150 Northwoods Blvd Unit B4 was listed as 'Permanently closed' and was NOT added to restaurants.ts.",
+    "7616 Rivers Ave and the Strom Thurmond Center (9200 University Blvd) locations were listed as 'Temporarily closed' at capture time; added with a note to reconfirm before recommending."
+  ],
+  "locations": [
+    {
+      "name": "Chick-fil-A",
+      "rating": "4.2 (3,950)",
+      "address": "4926 Centre Pointe Drive",
+      "status": "Open · Closed · Opens 6 AM Mon",
+      "phone": "(843) 744-9051",
+      "services": ["Dine-in", "Takeout", "Delivery"],
+      "resolution": "kept existing chick-fil-a-centre-pointe entry, reconfirmed open"
+    },
+    {
+      "name": "Chick-fil-A",
+      "rating": "3.0 (64)",
+      "address": "5500 International Blvd",
+      "status": "Closed · Opens 4 AM Mon",
+      "services": ["Delivery", "No dine-in", "No takeout"],
+      "resolution": "removed at user request \u2014 not in updated listing"
+    },
+    {
+      "name": "Chick-fil-A",
+      "rating": "4.6 (4,752)",
+      "address": "7616 Rivers Ave",
+      "status": "Temporarily closed",
+      "phone": "(843) 797-0122",
+      "resolution": "added as chick-fil-a-rivers-ave with a temporarily-closed note"
+    },
+    {
+      "name": "Chick-fil-A",
+      "rating": "4.3 (125)",
+      "address": "4 Ave of Remembrance",
+      "status": "Closed · Opens 7 AM Mon",
+      "phone": "(843) 953-2556",
+      "services": ["Delivery", "No dine-in", "No takeout"],
+      "resolution": "kept existing chick-fil-a-the-citadel entry"
+    },
+    {
+      "name": "Chick-fil-A",
+      "rating": "4.6 (3,233)",
+      "address": "8455 Dorchester Rd",
+      "status": "Closed · Opens 6 AM Mon",
+      "phone": "(843) 767-1213",
+      "services": ["Dine-in", "Drive-through", "Delivery"],
+      "resolution": "added as chick-fil-a-dorchester-rd"
+    },
+    {
+      "name": "Chick-fil-A",
+      "rating": "4.4 (71)",
+      "address": "Strom Thurmond Center, 9200 University Blvd",
+      "status": "Temporarily closed",
+      "phone": "(843) 863-7050",
+      "resolution": "added as chick-fil-a-strom-thurmond-center with a temporarily-closed note"
+    },
+    {
+      "name": "Chick-fil-A",
+      "rating": "4.4 (2,603)",
+      "address": "2013 Magwood Dr",
+      "status": "Closed · Opens 6 AM Mon",
+      "phone": "(843) 571-1209",
+      "services": ["Dine-in", "Drive-through", "No-contact delivery"],
+      "resolution": "added as chick-fil-a-magwood-dr"
+    },
+    {
+      "name": "Chick-fil-A",
+      "rating": "4.5 (511)",
+      "address": "2150 Northwoods Blvd Unit B4",
+      "status": "Permanently closed",
+      "phone": "(843) 797-2341",
+      "services": ["Dine-in", "Curbside pickup", "Delivery"],
+      "resolution": "not added \u2014 permanently closed"
+    },
+    {
+      "name": "Chick-fil-A",
+      "rating": "4.3 (2,278)",
+      "address": "849 Folly Rd, Charleston, SC 29412",
+      "status": "Closed · Opens 6 AM Mon",
+      "phone": "(843) 795-9505",
+      "services": ["Dine-in", "Drive-through", "Delivery"],
+      "resolution": "added as chick-fil-a-folly-rd"
+    }
+  ]
+}

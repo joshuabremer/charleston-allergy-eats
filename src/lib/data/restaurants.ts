@@ -26,6 +26,10 @@ const MADRA_RUA_NOTE =
 	"Approved by user request. Lunch, dinner, and brunch menus were pasted and analyzed; kitchen uses peanut oil for frying (not a household concern). Raw source: data/raw/charleston-2026/pasted-madra-rua-irish-pub-listing-2026-07-12.json.";
 const COAST_BREWING_NOTE =
 	"Approved by user request. Food menu (Menu+July+2026.pdf) analyzed; this entry was re-added after being lost during an earlier session context compaction. Raw source: data/raw/charleston-2026/coast-brewing-listing-and-menu-2026-07-12.json.";
+const CHICK_FIL_A_UPDATE_NOTE =
+	"Added/updated from a user-pasted Google Maps location list (2026-07-12). The previous North Charleston delivery-only entry (5500 International Blvd) was removed at user request since it is no longer listed. Raw source: data/raw/charleston-2026/pasted-chick-fil-a-listings-update-2026-07-12.json.";
+const TEMPORARILY_CLOSED_NOTE =
+	'Google Maps listed this location as "Temporarily closed" as of the latest pasted listing (2026-07-12). Reconfirm it has reopened before recommending it.';
 
 export const restaurants: Restaurant[] = [
 	{
@@ -42,22 +46,7 @@ export const restaurants: Restaurant[] = [
 		longitude: -80.02114,
 		resources: [],
 		quotes: [],
-		notes: [NOT_YET_RESEARCHED_NOTE, RAW_SOURCE_NOTE]
-	},
-	{
-		slug: 'chick-fil-a-north-charleston-delivery',
-		name: 'Chick-fil-A',
-		neighborhood: 'North Charleston',
-		address: 'North Charleston, SC (exact address unconfirmed)',
-		type: 'Fast food',
-		cuisineSummary: 'Fast food chicken',
-		summary: 'Delivery-only Chick-fil-A location (no dine-in or takeout per pasted listing).',
-		meals: ['Lunch', 'Dinner'],
-		latitude: 32.8546,
-		longitude: -79.9748,
-		resources: [],
-		quotes: [],
-		notes: [NOT_YET_RESEARCHED_NOTE, APPROX_LOCATION_NOTE, RAW_SOURCE_NOTE]
+		notes: [NOT_YET_RESEARCHED_NOTE, RAW_SOURCE_NOTE, 'Reconfirmed open by user (2026-07-12).']
 	},
 	{
 		slug: 'chick-fil-a-the-citadel',
@@ -74,6 +63,86 @@ export const restaurants: Restaurant[] = [
 		resources: [],
 		quotes: [],
 		notes: [NOT_YET_RESEARCHED_NOTE, RAW_SOURCE_NOTE]
+	},
+	{
+		slug: 'chick-fil-a-rivers-ave',
+		name: 'Chick-fil-A',
+		neighborhood: 'North Charleston',
+		address: '7616 Rivers Ave, North Charleston, SC 29406',
+		phone: '(843) 797-0122',
+		type: 'Fast food',
+		cuisineSummary: 'Fast food chicken',
+		summary: 'Chick-fil-A on Rivers Ave; listed as temporarily closed as of the latest pasted listing.',
+		meals: ['Lunch', 'Dinner'],
+		latitude: 32.9410788,
+		longitude: -80.0396726,
+		resources: [],
+		quotes: [],
+		notes: [NOT_YET_RESEARCHED_NOTE, TEMPORARILY_CLOSED_NOTE, CHICK_FIL_A_UPDATE_NOTE]
+	},
+	{
+		slug: 'chick-fil-a-dorchester-rd',
+		name: 'Chick-fil-A',
+		neighborhood: 'North Charleston',
+		address: '8455 Dorchester Rd, North Charleston, SC 29420',
+		phone: '(843) 767-1213',
+		type: 'Fast food',
+		cuisineSummary: 'Fast food chicken',
+		summary: 'Chick-fil-A with dine-in, drive-through, and delivery.',
+		meals: ['Lunch', 'Dinner'],
+		latitude: 32.9158178,
+		longitude: -80.1115997,
+		resources: [],
+		quotes: [],
+		notes: [NOT_YET_RESEARCHED_NOTE, CHICK_FIL_A_UPDATE_NOTE]
+	},
+	{
+		slug: 'chick-fil-a-strom-thurmond-center',
+		name: 'Chick-fil-A',
+		neighborhood: 'North Charleston (Strom Thurmond Center)',
+		address: 'Strom Thurmond Center, 9200 University Blvd, North Charleston, SC 29406',
+		phone: '(843) 863-7050',
+		type: 'Fast food',
+		cuisineSummary: 'Fast food chicken',
+		summary: 'Chick-fil-A inside the Strom Thurmond Center; listed as temporarily closed as of the latest pasted listing.',
+		meals: ['Lunch', 'Dinner'],
+		latitude: 32.98,
+		longitude: -80.0725,
+		resources: [],
+		quotes: [],
+		notes: [NOT_YET_RESEARCHED_NOTE, TEMPORARILY_CLOSED_NOTE, CHICK_FIL_A_UPDATE_NOTE]
+	},
+	{
+		slug: 'chick-fil-a-magwood-dr',
+		name: 'Chick-fil-A',
+		neighborhood: 'North Charleston',
+		address: '2013 Magwood Dr, North Charleston, SC 29406',
+		phone: '(843) 571-1209',
+		type: 'Fast food',
+		cuisineSummary: 'Fast food chicken',
+		summary: 'Chick-fil-A with dine-in, drive-through, and no-contact delivery.',
+		meals: ['Lunch', 'Dinner'],
+		latitude: 32.8123144,
+		longitude: -80.0420693,
+		resources: [],
+		quotes: [],
+		notes: [NOT_YET_RESEARCHED_NOTE, CHICK_FIL_A_UPDATE_NOTE]
+	},
+	{
+		slug: 'chick-fil-a-folly-rd',
+		name: 'Chick-fil-A',
+		neighborhood: 'Charleston (James Island)',
+		address: '849 Folly Rd, Charleston, SC 29412',
+		phone: '(843) 795-9505',
+		type: 'Fast food',
+		cuisineSummary: 'Fast food chicken',
+		summary: 'Chick-fil-A with dine-in, drive-through, and delivery.',
+		meals: ['Lunch', 'Dinner'],
+		latitude: 32.7336,
+		longitude: -79.9743,
+		resources: [],
+		quotes: [],
+		notes: [NOT_YET_RESEARCHED_NOTE, CHICK_FIL_A_UPDATE_NOTE]
 	},
 	{
 		slug: 'jimmy-johns-north-charleston',
