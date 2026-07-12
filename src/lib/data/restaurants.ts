@@ -32,6 +32,8 @@ const TEMPORARILY_CLOSED_NOTE =
 	'Google Maps listed this location as "Temporarily closed" as of the latest pasted listing (2026-07-12). Reconfirm it has reopened before recommending it.';
 const COMMONHOUSE_ALEWORKS_NOTE =
 	"Added at user request as a place to review (not yet approved). Food menu was pasted and analyzed. Raw source: data/raw/charleston-2026/pasted-commonhouse-aleworks-listing-and-menu-2026-07-12.json.";
+const AZUL_MEXICANO_NOTE =
+	"Added at user request as a place to review (not yet approved). Full dinner and lunch specials menus were pasted and analyzed. Raw source: data/raw/charleston-2026/pasted-azul-mexicano-listing-and-menu-2026-07-12.json.";
 
 export const restaurants: Restaurant[] = [
 	{
@@ -1003,5 +1005,51 @@ export const restaurants: Restaurant[] = [
 		],
 		quotes: [],
 		notes: [COMMONHOUSE_ALEWORKS_NOTE]
+	},
+	{
+		slug: 'azul-mexicano',
+		name: 'Azul Mexicano',
+		neighborhood: 'North Charleston (Park Circle)',
+		address: '1078c E Montague Ave, North Charleston, SC 29405',
+		phone: '(843) 203-3754',
+		rating: 4.3,
+		type: 'Sit-down',
+		cuisineSummary: 'Mexican',
+		summary: 'Mexican restaurant with dine-in, takeout, and delivery, $10-20 per person.',
+		meals: ['Lunch', 'Dinner'],
+		latitude: 32.881821,
+		longitude: -79.977003,
+		resources: [
+			{
+				label: 'Website',
+				href: 'https://azulmexicanorestaurante.com',
+				kind: 'website'
+			},
+			{
+				label: 'Menu',
+				href: 'https://azulmexicanorestaurante.com',
+				kind: 'menu',
+				menuFlags: [
+					{
+						tone: 'yellow',
+						note: "No allergen disclaimer, allergen guide, or menu labeling appears anywhere on the pasted menu \u2014 ask staff directly about ingredients and cross-contact."
+					},
+					{
+						tone: 'green',
+						note: 'Fish tacos explicitly offer a choice of grilled or breaded fish, and many tacos/sopes use corn tortillas by default \u2014 naturally gluten-free options if ordered carefully.'
+					},
+					{
+						tone: 'green',
+						note: "A dedicated \u2018For Vegetarians\u2019 section (veggie fajitas, veggie quesadilla, tofu tacos al pastor, portobello tacos, veggie soup) shows built-in substitution flexibility beyond simple meat swaps."
+					},
+					{
+						tone: 'yellow',
+						note: 'Several fried items (chimichangas, taquitos, churros, sopapilla) mix corn- and flour-based fried components, likely from shared fryers \u2014 ask about cross-contact for gluten-free orders.'
+					}
+				]
+			}
+		],
+		quotes: [],
+		notes: [AZUL_MEXICANO_NOTE]
 	}
 ];

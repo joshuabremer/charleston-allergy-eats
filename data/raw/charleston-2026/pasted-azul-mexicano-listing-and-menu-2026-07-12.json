@@ -1,0 +1,43 @@
+{
+  "source": "User-pasted Google Maps listing + pasted dinner/lunch menu",
+  "capturedAt": "2026-07-12",
+  "listing": {
+    "name": "Azul Mexicano",
+    "rating": "4.3 (1,166)",
+    "pricePerPerson": "$10-20",
+    "category": "Restaurant",
+    "services": ["Dine-in", "Takeout", "Delivery"],
+    "address": "1078c E Montague Ave, North Charleston, SC 29405",
+    "hours": "Open · Closes 9 PM",
+    "menuLink": "azulmexicanorestaurante.com",
+    "website": "azulmexicanorestaurante.com",
+    "phone": "(843) 203-3754",
+    "plusCode": "V2JF+M6 North Charleston, South Carolina"
+  },
+  "menu": {
+    "sections": [
+      "Appetizers (nachos variants, queso fundido, ceviche, dips, fried calamari, wings, chicken fingers, sopes)",
+      "Soups & Salads (tortilla soup, shrimp/seafood soup, taco salad, Azul special salad, Mil Amores salad, Azul chicken salad, Cancun salad)",
+      "Tortas (Mexican sub sandwiches with fries or street corn)",
+      "Tacos (street, fish - grilled or breaded, shrimp, gringo, golden fried, nopales, alambre)",
+      "Sizzling Fajitas (chicken, steak, shrimp, pork, combinations)",
+      "Combinationas (build-your-own with burrito/enchilada/taco/chalupa/tostada/quesadilla/tostaguac/chile relleno)",
+      "Burritos (multiple styles, flour tortilla based)",
+      "Quesadillas (flour and corn tortilla variants)",
+      "Enchiladas (multiple sauces: mole, ranchero, green, poblano)",
+      "Azul Specialties (molcajete, fried chimichanga, chilaquiles, taquitos mexicanos, milanesa, chicken/azul bowls)",
+      "From the Grill - Chicken/Beef/Seafood/Pork (served with choice of two sides)",
+      "For Vegetarians (veggie fajitas, veggie quesadilla, tofu tacos al pastor, portobello tacos, veggie soup)",
+      "Sides (guacamole, avocado, beans, rice, cheese, sour cream, pico de gallo, street corn, chips & salsa)",
+      "Dessert (flan, sopapilla, churros with ice cream, fried ice cream, tres leches cake)",
+      "Lunchtime Specials (11am-3pm M-F): breakfast burrito, carne asada, carnitas, fajitas, pollo ranchero, chori-pollo, chilaquiles, huevos al gusto, taco salad, chimichangas, azul steak burrito, fajita quesadilla, azul chicken salad, cancun salad, chile colorado, chile verde, quesadilla rellena, muy rapido lunch"
+    ]
+  },
+  "analysisNotes": [
+    "No allergen disclaimer, allergen guide, or menu labeling was present anywhere in the pasted menu \u2014 unlike some other restaurants added to this list, there's no explicit 'tell your server about allergies' language. Ask staff directly.",
+    "Fish tacos explicitly offer a choice of grilled OR breaded fish, and many tacos/sopes use corn tortillas by default \u2014 good naturally gluten-free options if ordered carefully.",
+    "A dedicated 'For Vegetarians' section (veggie fajitas, veggie quesadilla, tofu tacos al pastor, portobello tacos, veggie soup) shows built-in substitution flexibility beyond simple meat swaps.",
+    "Several fried items (chimichangas, taquitos, churros, sopapilla) mix corn- and flour-based fried components, likely from shared fryers \u2014 ask about cross-contact for gluten-free orders.",
+    "Cheese sauces, mole, and other prepared sauces appear across many dishes with no ingredient breakdown given \u2014 ask about thickeners/roux if avoiding gluten."
+  ]
+}

@@ -702,35 +702,41 @@
 				role="group"
 				aria-label="Selected restaurant overview"
 			>
-				{#if selectedMobileRestaurant}
-					<section class="mobile-selection-card">
-						<div class="mobile-selection-nav">
-							<button
-								type="button"
-								class="mobile-nav-button"
-								aria-label="Previous restaurant"
-								title="Previous restaurant"
-								onclick={() => selectRestaurantByOffset(-1)}
-							>
-								‹ Prev
-							</button>
-							<span class="mobile-nav-position">
+				<section class="mobile-selection-card">
+					<div class="mobile-selection-nav">
+						<button
+							type="button"
+							class="mobile-nav-button"
+							aria-label="Previous restaurant"
+							title="Previous restaurant"
+							disabled={sortedVisiblePlaces.length === 0}
+							onclick={() => selectRestaurantByOffset(-1)}
+						>
+							‹ Prev
+						</button>
+						<span class="mobile-nav-position">
+							{#if selectedMobileRestaurant}
 								{sortedVisiblePlaces.findIndex((restaurant) => restaurant.slug === selectedMobileRestaurant.slug) + 1}
 								of {sortedVisiblePlaces.length}
-							</span>
-							<button
-								type="button"
-								class="mobile-nav-button"
-								aria-label="Next restaurant"
-								title="Next restaurant"
-								onclick={() => selectRestaurantByOffset(1)}
-							>
-								Next ›
-							</button>
-						</div>
+							{:else}
+								0 of 0
+							{/if}
+						</span>
+						<button
+							type="button"
+							class="mobile-nav-button"
+							aria-label="Next restaurant"
+							title="Next restaurant"
+							disabled={sortedVisiblePlaces.length === 0}
+							onclick={() => selectRestaurantByOffset(1)}
+						>
+							Next ›
+						</button>
+					</div>
 
+					{#if selectedMobileRestaurant}
 						<div class="place-card-top">
-							<div>
+							<div class="mobile-selection-title">
 								<h2>{selectedMobileRestaurant.name}</h2>
 								<p>
 									{selectedMobileRestaurant.neighborhood}
@@ -752,9 +758,7 @@
 							{/if}
 						</div>
 
-						{#if selectedMobileRestaurant.summary}
-							<p class="place-summary">{selectedMobileRestaurant.summary}</p>
-						{/if}
+						<p class="place-summary">{selectedMobileRestaurant.summary ?? ''}</p>
 
 						<div class="mobile-selection-meta">
 							<p><strong>Type:</strong> {selectedMobileRestaurant.type}</p>
@@ -762,22 +766,28 @@
 						</div>
 
 						<div class="mobile-selection-actions">
-							{#if restaurantCallHref(selectedMobileRestaurant)}
-								<a
-									href={restaurantCallHref(selectedMobileRestaurant)}
-									class="mobile-secondary-action"
-									aria-label="Call restaurant"
-									title="Call {selectedMobileRestaurant.phone}"
-								>
-									<span aria-hidden="true" class="mobile-call-icon">
-										<svg viewBox="0 0 24 24" focusable="false">
-											<path
-												d="M6.6 10.8c1.3 2.6 3.4 4.7 6 6l2-2c.25-.25.6-.33.92-.22 1.02.34 2.1.52 3.22.52a1 1 0 0 1 1 1V19.9a1 1 0 0 1-1 1C10.6 20.9 3.1 13.4 3.1 4.32a1 1 0 0 1 1-1H7.2a1 1 0 0 1 1 1c0 1.12.18 2.2.52 3.22.11.32.03.67-.22.92l-2 2Z"
-											/>
-										</svg>
-									</span>
-								</a>
-							{/if}
+							<a
+								href={restaurantCallHref(selectedMobileRestaurant) ?? undefined}
+								class="mobile-secondary-action"
+								class:disabled-action={!restaurantCallHref(selectedMobileRestaurant)}
+								aria-label="Call restaurant"
+								aria-disabled={!restaurantCallHref(selectedMobileRestaurant)}
+								title={selectedMobileRestaurant.phone ? `Call ${selectedMobileRestaurant.phone}` : 'No phone number on file'}
+								tabindex={restaurantCallHref(selectedMobileRestaurant) ? 0 : -1}
+								onclick={(event) => {
+									if (!restaurantCallHref(selectedMobileRestaurant)) {
+										event.preventDefault();
+									}
+								}}
+							>
+								<span aria-hidden="true" class="mobile-call-icon">
+									<svg viewBox="0 0 24 24" focusable="false">
+										<path
+											d="M6.6 10.8c1.3 2.6 3.4 4.7 6 6l2-2c.25-.25.6-.33.92-.22 1.02.34 2.1.52 3.22.52a1 1 0 0 1 1 1V19.9a1 1 0 0 1-1 1C10.6 20.9 3.1 13.4 3.1 4.32a1 1 0 0 1 1-1H7.2a1 1 0 0 1 1 1c0 1.12.18 2.2.52 3.22.11.32.03.67-.22.92l-2 2Z"
+										/>
+									</svg>
+								</span>
+							</a>
 							<a
 								href={restaurantDirectionsHref(selectedMobileRestaurant)}
 								target="_blank"
@@ -797,18 +807,18 @@
 								Details
 							</a>
 						</div>
-					</section>
-				{:else}
-					<section class="mobile-selection-card">
-						{#if visiblePlaces.length === 0}
-							<h2>No places match</h2>
-							<p class="place-summary">Try changing the filters to show more restaurants on the map.</p>
-						{:else}
-							<h2>Select a restaurant</h2>
-							<p class="place-summary">Tap a marker or a restaurant card to show its details here.</p>
-						{/if}
-					</section>
-				{/if}
+					{:else}
+						<div class="mobile-selection-empty">
+							{#if visiblePlaces.length === 0}
+								<h2>No places match</h2>
+								<p class="place-summary">Try changing the filters to show more restaurants on the map.</p>
+							{:else}
+								<h2>Select a restaurant</h2>
+								<p class="place-summary">Tap a marker or a restaurant card to show its details here.</p>
+							{/if}
+						</div>
+					{/if}
+				</section>
 			</div>
 
 			<div class="overlay">
@@ -1278,13 +1288,16 @@
 
 		.mobile-selection-card {
 			display: grid;
-			gap: 0.8rem;
+			gap: 0.6rem;
+			height: 15.5rem;
 			padding: 1rem 1rem calc(1rem + env(safe-area-inset-bottom));
 			border-radius: 1.4rem 1.4rem 0 0;
 			background: rgb(255 255 255 / 0.95);
 			backdrop-filter: blur(16px);
 			box-shadow: var(--panel-shadow-strong);
 			pointer-events: auto;
+			overflow: hidden;
+			align-content: start;
 		}
 
 		.mobile-selection-nav {
@@ -1303,6 +1316,11 @@
 			background: var(--button-secondary-bg);
 			color: var(--button-secondary-text, inherit);
 			cursor: pointer;
+		}
+
+		.mobile-nav-button:disabled {
+			opacity: 0.5;
+			cursor: default;
 		}
 
 		.mobile-nav-position {
@@ -1362,10 +1380,34 @@
 
 		.mobile-selection-card h2 {
 			margin-bottom: 0.2rem;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
 		}
 
 		.mobile-selection-card .place-card-top {
 			align-items: start;
+			min-width: 0;
+		}
+
+		.mobile-selection-title {
+			min-width: 0;
+			overflow: hidden;
+		}
+
+		.mobile-selection-title p {
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+
+		.mobile-selection-card .place-summary {
+			display: -webkit-box;
+			-webkit-box-orient: vertical;
+			-webkit-line-clamp: 2;
+			line-clamp: 2;
+			overflow: hidden;
+			margin: 0;
 		}
 
 		.mobile-selection-actions {
@@ -1374,15 +1416,31 @@
 			flex-wrap: wrap;
 		}
 
+		.mobile-secondary-action.disabled-action {
+			opacity: 0.35;
+			pointer-events: none;
+		}
+
 		.mobile-selection-meta {
 			display: grid;
 			gap: 0.2rem;
+			overflow: hidden;
 		}
 
 		.mobile-selection-meta p {
 			margin: 0;
 			color: var(--text-secondary);
 			font-size: 0.9rem;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+
+		.mobile-selection-empty {
+			display: grid;
+			align-content: center;
+			gap: 0.3rem;
+			text-align: center;
 		}
 
 		.overview-grid {
