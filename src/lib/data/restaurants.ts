@@ -933,12 +933,13 @@ export const restaurants: Restaurant[] = [
 		address: "4831 O'Hear Ave, North Charleston, SC 29405",
 		phone: '(843) 471-1400',
 		rating: 4.6,
+		googlePlaceId: 'ChIJseCKouhk_ogRPA_ddGj0rEw',
 		type: 'Sit-down',
 		cuisineSummary: 'Brewery / pub food',
 		summary: 'Brewery with dine-in, takeout, and delivery.',
 		meals: ['Lunch', 'Dinner'],
-		latitude: 32.8788376,
-		longitude: -80.005376,
+		latitude: 32.8823815,
+		longitude: -79.9760019,
 		resources: [
 			{
 				label: 'Website',
