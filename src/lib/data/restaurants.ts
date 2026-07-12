@@ -30,6 +30,8 @@ const CHICK_FIL_A_UPDATE_NOTE =
 	"Added/updated from a user-pasted Google Maps location list (2026-07-12). The previous North Charleston delivery-only entry (5500 International Blvd) was removed at user request since it is no longer listed. Raw source: data/raw/charleston-2026/pasted-chick-fil-a-listings-update-2026-07-12.json.";
 const TEMPORARILY_CLOSED_NOTE =
 	'Google Maps listed this location as "Temporarily closed" as of the latest pasted listing (2026-07-12). Reconfirm it has reopened before recommending it.';
+const COMMONHOUSE_ALEWORKS_NOTE =
+	"Added at user request as a place to review (not yet approved). Food menu was pasted and analyzed. Raw source: data/raw/charleston-2026/pasted-commonhouse-aleworks-listing-and-menu-2026-07-12.json.";
 
 export const restaurants: Restaurant[] = [
 	{
@@ -955,5 +957,51 @@ export const restaurants: Restaurant[] = [
 		],
 		quotes: [],
 		notes: [COAST_BREWING_NOTE]
+	},
+	{
+		slug: 'commonhouse-aleworks',
+		name: 'Commonhouse Aleworks',
+		neighborhood: 'North Charleston',
+		address: "4831 O'Hear Ave, North Charleston, SC 29405",
+		phone: '(843) 471-1400',
+		rating: 4.6,
+		type: 'Sit-down',
+		cuisineSummary: 'Brewery / pub food',
+		summary: 'Brewery with dine-in, takeout, and delivery.',
+		meals: ['Lunch', 'Dinner'],
+		latitude: 32.8823815,
+		longitude: -79.9760019,
+		resources: [
+			{
+				label: 'Website',
+				href: 'https://commonhousealeworks.com',
+				kind: 'website'
+			},
+			{
+				label: 'Menu',
+				href: 'https://app.livetaplists.com',
+				kind: 'menu',
+				menuFlags: [
+					{
+						tone: 'green',
+						note: 'Menu explicitly asks guests to tell the server about allergies and marks Vegetarian Option/Spicy items \u2014 a good sign of engagement even without a full allergen guide.'
+					},
+					{
+						tone: 'yellow',
+						note: "\u2018Fried Ritz\u2019 crackers top both salads (Green Salad and Caesar Salad) \u2014 Ritz crackers contain wheat, so ask to omit for a gluten-free order."
+					},
+					{
+						tone: 'yellow',
+						note: 'The CAB Smoked Brisket Burger is served on a seeded bun, which may contain sesame (a top allergen) \u2014 ask about substituting a different bun.'
+					},
+					{
+						tone: 'yellow',
+						note: 'No dedicated allergen guide or online menu labeling beyond the general disclaimer; several fried items (chicken fingers, spicy fried chicken sandwich, smoked wings) likely share fryers, so ask about cross-contact.'
+					}
+				]
+			}
+		],
+		quotes: [],
+		notes: [COMMONHOUSE_ALEWORKS_NOTE]
 	}
 ];

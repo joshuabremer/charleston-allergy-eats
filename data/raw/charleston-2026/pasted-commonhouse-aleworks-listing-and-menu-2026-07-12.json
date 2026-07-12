@@ -1,0 +1,84 @@
+{
+  "source": "User-pasted Google Maps listing + pasted food menu",
+  "capturedAt": "2026-07-12",
+  "listing": {
+    "name": "Commonhouse Aleworks",
+    "rating": "4.6 (506)",
+    "category": "Brewery",
+    "services": ["Dine-in", "Takeout", "Delivery"],
+    "address": "4831 O'Hear Ave, North Charleston, SC 29405",
+    "hours": "Open · Closes 9 PM",
+    "menuLink": "app.livetaplists.com",
+    "website": "commonhousealeworks.com",
+    "phone": "(843) 471-1400",
+    "plusCode": "V2JF+XH North Charleston, South Carolina",
+    "other": "LGBTQ+ friendly"
+  },
+  "menu": {
+    "sections": [
+      {
+        "name": "Apps & Sharables",
+        "items": [
+          "Soft Pretzel with Beer Cheese and Mustard - 13.5",
+          "Boiled Peanut Hummus with Pita, Pickled Vegetables, and Feta - 13.5",
+          "Pulled Pork Totchos with Beer Cheese, Onion, and Jalapeno - 14.5",
+          "Smoked Wings (6/12.5) - 10.25/19.75/39.5/79; sauces: Dry Rub, BBQ, PB&J, Alabama White, Hot Honey Mustard, Garlic Buffalo"
+        ]
+      },
+      {
+        "name": "Salads",
+        "items": [
+          "Green Salad with Cucumbers, Grape Tomatoes, Red Onion, and Fried Ritz - 10.5",
+          "Caesar Salad with Smoky Caesar, Shredded Parmesan, and Fried Ritz - 10.5",
+          "Add Protein (Pulled Pork or Fried Chicken) - 8",
+          "Dressings: BBQ Vin, Ranchabama, Honey Mustard, Green Goddess, Blue Cheese, Smoky Caesar"
+        ]
+      },
+      {
+        "name": "Sides",
+        "items": ["Baked Potato Salad - 5", "French Fries - 5", "Cole Slaw - 5", "Tater Tots - 5", "Side Salad - 5"]
+      },
+      {
+        "name": "Handhelds",
+        "items": [
+          "B.L.T. with 1/2 Pound Bacon, Lettuce, Tomato, and Deviled Egg Spread - 17.5",
+          "Pulled Pork Sandwich - 15.5",
+          "Spicy Fried Chicken Sandwich with Tobasco Honey, Pimento Cheese, and Pickles - 16.5",
+          "All handhelds come with a choice of one side."
+        ]
+      },
+      {
+        "name": "Certified Angus Beef",
+        "items": [
+          "CAB Brisket Smashburger with White Cheese, Beer Cheese, Special Sauce, and Onion - Single 11 / Double 16.5",
+          "CAB Smoked Brisket Burger with White Cheese, Beer Cheese, Special Sauce, LTOP, on a Seeded Bun - 16.5"
+        ]
+      },
+      {
+        "name": "Baskets",
+        "items": ["Chicken Fingers (4) with 4oz Cole Slaw, and Choice of One Side - 15.5"]
+      },
+      {
+        "name": "Kids Menu",
+        "items": [
+          "Pulled Pork Sandwich - 8.75",
+          "Grilled Cheese - 8.75",
+          "Boiled Peanut Hummus Plate - 8.75",
+          "Kids meals come with choice of one side: Fries, Tater Tots, Baked Potato Salad, Cole Slaw, Side Salad"
+        ]
+      },
+      {
+        "name": "Desserts",
+        "items": ["Banana Pudding - 8"]
+      }
+    ],
+    "disclaimer": "Consuming raw or undercooked meats, poultry, seafood, shellfish, or eggs may increase your risk of a food borne illness. Please let your server know of any allergies. Menu marks Vegetarian Option and Spicy items."
+  },
+  "analysisNotes": [
+    "Menu explicitly asks guests to tell the server about allergies, and marks vegetarian/spicy items \u2014 a good sign of engagement even without a full allergen guide.",
+    "'Fried Ritz' crackers top both salads (Green Salad and Caesar Salad) \u2014 Ritz crackers contain wheat, so ask to omit for a gluten-free order.",
+    "The CAB Smoked Brisket Burger is served on a seeded bun, which may contain sesame (a top allergen) \u2014 ask about substituting a different bun.",
+    "No dedicated allergen guide or online menu labeling beyond the general disclaimer; several fried items (chicken fingers, spicy fried chicken sandwich, smoked wings) likely share fryers, so ask about cross-contact.",
+    "Boiled peanut hummus appears twice (apps and kids menu) \u2014 not a concern for this household, but worth flagging for anyone with a peanut allergy."
+  ]
+}
