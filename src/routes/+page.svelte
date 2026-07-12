@@ -72,6 +72,20 @@
 
 		return visiblePlaces.find((restaurant) => restaurant.slug === mobileSelectedSlug) ?? null;
 	});
+	const selectedMobileDistanceMiles = $derived.by(() => {
+		const position = geoStore.position;
+
+		if (!position || !selectedMobileRestaurant) {
+			return null;
+		}
+
+		return distanceInMiles(
+			position[0],
+			position[1],
+			selectedMobileRestaurant.latitude,
+			selectedMobileRestaurant.longitude
+		);
+	});
 	const markerDecisions = $derived.by(() =>
 		Object.fromEntries(restaurants.map((restaurant) => [restaurant.slug, getUserReview(reviewState, restaurant.slug).decision]))
 	);
@@ -248,24 +262,8 @@
 		mobileSidebarOpen = false;
 	}
 
-	const SWIPE_THRESHOLD_PX = 50;
-	let touchStartX: number | null = null;
-
-	function handleSelectionTouchStart(event: TouchEvent) {
-		touchStartX = event.touches[0]?.clientX ?? null;
-	}
-
-	function handleSelectionTouchEnd(event: TouchEvent) {
-		if (touchStartX === null || sortedVisiblePlaces.length === 0) {
-			touchStartX = null;
-			return;
-		}
-
-		const touchEndX = event.changedTouches[0]?.clientX ?? touchStartX;
-		const deltaX = touchEndX - touchStartX;
-		touchStartX = null;
-
-		if (Math.abs(deltaX) < SWIPE_THRESHOLD_PX) {
+	function selectRestaurantByOffset(direction: 1 | -1) {
+		if (sortedVisiblePlaces.length === 0) {
 			return;
 		}
 
@@ -273,8 +271,6 @@
 			(restaurant) => restaurant.slug === mobileSelectedSlug
 		);
 		const baseIndex = currentIndex === -1 ? 0 : currentIndex;
-		// Swipe left -> next-closest restaurant, swipe right -> previous.
-		const direction = deltaX < 0 ? 1 : -1;
 		const nextIndex =
 			(baseIndex + direction + sortedVisiblePlaces.length) % sortedVisiblePlaces.length;
 
@@ -705,15 +701,43 @@
 				class="mobile-selection-sheet"
 				role="group"
 				aria-label="Selected restaurant overview"
-				ontouchstart={handleSelectionTouchStart}
-				ontouchend={handleSelectionTouchEnd}
 			>
 				{#if selectedMobileRestaurant}
 					<section class="mobile-selection-card">
+						<div class="mobile-selection-nav">
+							<button
+								type="button"
+								class="mobile-nav-button"
+								aria-label="Previous restaurant"
+								title="Previous restaurant"
+								onclick={() => selectRestaurantByOffset(-1)}
+							>
+								‹ Prev
+							</button>
+							<span class="mobile-nav-position">
+								{sortedVisiblePlaces.findIndex((restaurant) => restaurant.slug === selectedMobileRestaurant.slug) + 1}
+								of {sortedVisiblePlaces.length}
+							</span>
+							<button
+								type="button"
+								class="mobile-nav-button"
+								aria-label="Next restaurant"
+								title="Next restaurant"
+								onclick={() => selectRestaurantByOffset(1)}
+							>
+								Next ›
+							</button>
+						</div>
+
 						<div class="place-card-top">
 							<div>
 								<h2>{selectedMobileRestaurant.name}</h2>
-								<p>{selectedMobileRestaurant.neighborhood}</p>
+								<p>
+									{selectedMobileRestaurant.neighborhood}
+									{#if selectedMobileDistanceMiles !== null}
+										· {selectedMobileDistanceMiles.toFixed(1)} mi away
+									{/if}
+								</p>
 							</div>
 							{#if getUserReview(reviewState, selectedMobileRestaurant.slug).decision === 'rejected'}
 								<span class="rejected-pill">Rejected</span>
@@ -770,7 +794,7 @@
 								</span>
 							</a>
 							<a href={restaurantHref(selectedMobileRestaurant.slug)} class="mobile-primary-action">
-								View details
+								Details
 							</a>
 						</div>
 					</section>
@@ -1261,6 +1285,30 @@
 			backdrop-filter: blur(16px);
 			box-shadow: var(--panel-shadow-strong);
 			pointer-events: auto;
+		}
+
+		.mobile-selection-nav {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 0.5rem;
+		}
+
+		.mobile-nav-button {
+			border: none;
+			border-radius: 999px;
+			padding: 0.4rem 0.85rem;
+			font-size: 0.85rem;
+			font-weight: 600;
+			background: var(--button-secondary-bg);
+			color: var(--button-secondary-text, inherit);
+			cursor: pointer;
+		}
+
+		.mobile-nav-position {
+			font-size: 0.78rem;
+			color: var(--text-muted, #666);
+			white-space: nowrap;
 		}
 
 		.mobile-icon-button-label {
