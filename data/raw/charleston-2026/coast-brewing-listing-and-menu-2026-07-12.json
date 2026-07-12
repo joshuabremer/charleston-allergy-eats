@@ -1,0 +1,39 @@
+{
+  "source": "User-pasted Google Maps listing for COAST Brewing Company, approved by user; menu PDF (Menu+July+2026.pdf) re-analyzed after original analysis was lost during an earlier session context compaction.",
+  "capturedAt": "2026-07-12",
+  "location": {
+    "name": "COAST Brewing Company",
+    "description": "Straightforward neighborhood brewery featuring tours plus samples of its craft beers.",
+    "serviceOptions": ["Outdoor seating", "Live performances", "Food at bar"],
+    "address": "1250 2nd St N, North Charleston, SC 29405",
+    "phone": "(843) 343-4727",
+    "pricePerPerson": "$20-30",
+    "hoursNote": "Closed · Opens 12 PM",
+    "confirmedByPhoneCall": true
+  },
+  "menuText": {
+    "food": [
+      "Meat & Cheese Plate ($20/28): selection of cured meats and cheeses with house-made pickles, beer mustard, pepper cheese, whipped tallow butter, crackers + pickles",
+      "Tallow Fried Wisconsin Cheese Curds ($11), buttermilk ranch or bloody mary ketchup",
+      "Roasted Cauliflower (V) ($13): smoked olive oil, tahini, lemon, chili flake",
+      "Tallow Fried Crispy Potatoes ($8): buttermilk ranch or bloody mary ketchup",
+      "Carpaccio* ($20): thin sliced raw C.A.B beef, parmesan, parsley, lemon, bierjonnaise, rye crisps",
+      "Chicken Wings ($12/$23): Joyce Farms chicken, Kölsch brined, tossed with buffalo sauce or lemon pepper + clarified butter, celery, house ranch or blue cheese, tallow fried",
+      "Fried Bologna Sandwich ($15): house smoked grassfed thin sliced bologna, provolone, pickled green tomatoes, Alabama white sauce, Normandy bun",
+      "Grassfed Hot Dogs (1 for $10/2 for $18): Chicago style (tomato, onion, pickle, sport pepper, poppy seed) or house sauerkraut & beer mustard",
+      "COAST Grassfed Burger ($19): double stacked 4oz patties, American cheese, griddled onions, special sauce, Normandy Bakery bun; add tallow fried potatoes +$3",
+      "Single Patty COAST Burger ($13); add tallow fried cheese curds +$4",
+      "Green Chorizo Tacos (3) ($16): Peculiar Pig Farms heritage pork, onion, cilantro, roasted tomato salsa, corn tortillas",
+      "Grilled Cheese ($6): Normandy white bread",
+      "Kids Single Grassfed Cheese Burger ($9)",
+      "Kids Real Plain Quesadilla (corn) ($5)"
+    ],
+    "allergyRelevantNotes": [
+      "Menu states: 'All dressings and sauces are house made without seed oils.'",
+      "Fried items (cheese curds, crispy potatoes, chicken wings) are 'tallow fried' — i.e. fried in beef tallow, not peanut or other seed oil.",
+      "Kids quesadilla uses corn tortillas (naturally gluten-free); green chorizo tacos also use corn tortillas.",
+      "No dedicated allergen guide or per-item allergen labeling; standard raw/undercooked-food disclaimer only ('Consuming raw or undercooked Meats Poultry Seafood or Eggs increase your risk of foodborne illness').",
+      "Most sandwiches/burgers use Normandy Bakery bread/buns (wheat/gluten); no gluten-free bun substitute mentioned."
+    ]
+  }
+}

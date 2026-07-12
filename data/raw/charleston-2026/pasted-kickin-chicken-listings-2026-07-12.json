@@ -1,0 +1,54 @@
+{
+  "source": "User-pasted Google Maps search/listing results for The Kickin' Chicken",
+  "capturedAt": "2026-07-12",
+  "notes": [
+    "User asked to add The Kickin' Chicken as a place to review (not yet approved).",
+    "User also referenced a local menu PDF (KC_Menu_Spring.pdf) and the live menu page https://kickinchickensamrittenberg.com/food-menu for allergy research, but the PDF attachment was not available to re-analyze when this data was curated. Re-request the PDF or pull the menu from the website link before finalizing allergy research.",
+    "Each entry is a distinct physical location and must not be merged with other locations of the same chain/brand.",
+    "Exact street addresses were not in the pasted listing except where noted; locations use approximate area coordinates."
+  ],
+  "locations": [
+    {
+      "brand": "The Kickin' Chicken",
+      "area": "Charleston, SC",
+      "phone": "(843) 766-5292",
+      "hoursNote": "Open · Closes 10 PM",
+      "service": ["Dine-in", "Curbside pickup", "Delivery"]
+    },
+    {
+      "brand": "The Kickin' Chicken",
+      "area": "Charleston, SC",
+      "phone": "(843) 805-5020",
+      "hoursNote": "Open · Closes 10 PM",
+      "service": ["Dine-in", "Takeout", "Delivery"]
+    },
+    {
+      "brand": "The Kickin' Chicken",
+      "area": "Johns Island, SC",
+      "phone": "(843) 990-5711",
+      "hoursNote": "Open · Closes 10 PM",
+      "service": ["Dine-in", "Takeout", "Delivery"]
+    },
+    {
+      "brand": "The Kickin' Chicken",
+      "area": "Mt Pleasant, SC",
+      "phone": "(843) 881-8734",
+      "hoursNote": "Open · Closes 10 PM",
+      "service": ["Dine-in", "Curbside pickup", "Delivery"]
+    },
+    {
+      "brand": "The Kickin' Chicken",
+      "area": "Summerville, SC",
+      "phone": "(843) 225-3535",
+      "hoursNote": "Open · Closes 10 PM",
+      "service": ["Dine-in", "Curbside pickup", "Delivery"]
+    },
+    {
+      "brand": "The Kickin' Chicken",
+      "area": "Summerville, SC",
+      "phone": "(843) 875-6998",
+      "hoursNote": "Open · Closes 10 PM",
+      "service": ["Dine-in", "Drive-through"]
+    }
+  ]
+}

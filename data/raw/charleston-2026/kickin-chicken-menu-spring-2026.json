@@ -1,0 +1,23 @@
+{
+  "source": "KC_Menu_Spring.pdf (local file provided by user) — full food & drink menu for The Kickin' Chicken",
+  "capturedAt": "2026-07-12",
+  "menuUrl": "https://kickinchickensamrittenberg.com/food-menu",
+  "allergyDisclaimer": "At The Kickin' Chicken, we prioritize your safety and satisfaction above all else. We want to make you aware that our kitchen environment may involve cross-contact with allergens or non-vegan ingredients. While we will do our best to accommodate all requests, we cannot guarantee a complete absence of these ingredients.",
+  "menuSections": [
+    "Shareables: Bobby fries, fried pickles, nuggets, bangin' shrimp, chicken tenders, mozzarella bites, nachos, chips and queso, buffalo chicken dip, southwestern chicken egg rolls, stuffed pretzels, cheesy bread, buffalo chicken pockets, tacos, grilled shrimp, quesadillas",
+    "Signature sandwiches & wraps: The Kickin' Chicken, Buffalo Kickin' Chicken, Buffalo Chicken Wrap, The Kick-Fil-A, The Johnny, The Spicy Southern, Naked CBLT Wrap, Santa Fe Wrap. Fried or grilled chicken available on most",
+    "Wings: fresh wings tossed in sauce or dry rub, many sauce/rub options (Buffalo, BBQ, Nashville Hot, Teriyaki, Korean BBQ, Bourbon BBQ, Hot Honey Garlic, Mango Habanero, Honey Mustard, Thai Chili, Polynesian, Pterodactyl, Lemon Pepper, Jamaican Jerk, Garlic Lime, Spicy Ranch)",
+    "Salads: Kickin' Chicken Salad, Buffalo Chicken Salad, House Salad, Caesar Salad, Southwest Salad, Chicken Caesar. Grilled or fried chicken options",
+    "Burgers: All American Burger, Drive In Burger, Boss Burger, Parmesan Ranch Burger, Black Bean Burger (veggie)",
+    "Sides: Bobby fries, tots, sweet potato fries, fries, tomato cucumber salad, pasta salad, coleslaw, chips",
+    "Sweet treats: peanut butter chocolate cake, confetti cake, chocolate chip cookies",
+    "Drinks: cocktails, beer, wine, seltzers"
+  ],
+  "allergyRelevantObservations": [
+    "Explicit allergen cross-contact disclaimer printed on the menu; no dedicated allergen guide or per-item allergen labeling.",
+    "Most sandwiches, tenders, nuggets, and wraps offer a grilled chicken option as an alternative to fried/breaded chicken.",
+    "Fried items (tenders, nuggets, wings, fried pickles, mozzarella bites) are hand-breaded, so shared fryer cross-contact with gluten/wheat is likely.",
+    "Sweet treats section includes a peanut butter chocolate cake (relevant if avoiding peanuts, though not a household concern here).",
+    "Heavy use of cheese (provolone, mixed cheeses, queso, ranch, bleu cheese) across sandwiches, burgers, and shareables."
+  ]
+}

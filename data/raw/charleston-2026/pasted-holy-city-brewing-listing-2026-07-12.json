@@ -1,0 +1,29 @@
+{
+  "source": "User-pasted Google Maps listing and menu for Holy City Brewing",
+  "capturedAt": "2026-07-12",
+  "notes": [
+    "User asked to add Holy City Brewing as a place to review (not yet approved).",
+    "Full food menu (sharables, burgers, sammies, salads, sides, kids menu, seafare/raw bar, brunch specials) was pasted from the restaurant's website and analyzed."
+  ],
+  "location": {
+    "brand": "Holy City Brewing",
+    "category": "Brewery",
+    "rating": 4.5,
+    "ratingCount": 1639,
+    "description": "Craft brewery featuring a garagelike tasting room with a pool table & live music, plus free tours.",
+    "address": "1021 Aragon Ave, Charleston, SC 29405",
+    "phone": "(843) 459-2948",
+    "website": "holycitybrewing.com",
+    "hoursNote": "Open · Closes 10 PM",
+    "service": ["Dine-in", "Takeout", "Delivery"]
+  },
+  "menuHighlights": [
+    "Sharables: pretzels, boiled peanuts, chips and dip, collision fries, brussel sprouts, mozzarella wedges, hummus, chicken nuggets, chicken wings",
+    "Burgers: Holy City Burger (pimento cheese, fried green tomato, bacon), Tomato Jam Burger, Classic Smash Burger",
+    "Sammies: grilled chicken club, fried chicken sandwich, chopped cheese, chopped turkey and ham sub",
+    "Salads: Holy City Salad, Burrata Salad",
+    "Sides: fries, house side salad; Kids menu: hot dog, grilled cheese, cheeseburger, nuggets",
+    "Seafare/raw bar: peel and eat shrimp, ceviche, smoked seafood dip, oysters, shrimp caesar salad, buffalo shrimp taco",
+    "Brunch specials: biscuits and gravy, chicken biscuits, shrimp and grits"
+  ]
+}

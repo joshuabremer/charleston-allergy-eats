@@ -1,0 +1,213 @@
+{
+  "source": "User-pasted Google Maps search/listing results",
+  "capturedAt": "2026-07-12",
+  "notes": [
+    "These are raw location listings pasted by the user, not yet researched for allergy accommodations.",
+    "Each entry is a distinct physical location and must not be merged with other locations of the same chain/brand.",
+    "No allergy research, menus, or reviews have been collected for these yet — treat as an inbox for future curation."
+  ],
+  "locations": [
+    {
+      "brand": "Chick-fil-A",
+      "distanceNote": "2.1 mi",
+      "area": "North Charleston, SC",
+      "phone": "(843) 744-9051",
+      "hoursNote": "Closed · Opens 6 AM Mon",
+      "service": ["Dine-in", "Drive-through", "Delivery"]
+    },
+    {
+      "brand": "Chick-fil-A",
+      "distanceNote": "2.9 mi",
+      "area": "North Charleston, SC",
+      "hoursNote": "Closed · Opens 4 AM Mon",
+      "service": ["Delivery"],
+      "notService": ["No dine-in", "No takeout"]
+    },
+    {
+      "brand": "Chick-fil-A",
+      "distanceNote": "6.3 mi",
+      "address": "4 Ave of Remembrance",
+      "phone": "(843) 953-2556",
+      "hoursNote": "Closed · Opens 7 AM Mon",
+      "service": ["Delivery"],
+      "notService": ["No dine-in", "No takeout"]
+    },
+    {
+      "brand": "Jimmy John's",
+      "area": "North Charleston, SC",
+      "phone": "(843) 225-8083",
+      "hoursNote": "Open · Closes 9 PM",
+      "reviewQuote": "Super Clean, super friendly, fast, they hooked up my sandwiches too!"
+    },
+    {
+      "brand": "Jersey Mike's Subs",
+      "area": "North Charleston, SC",
+      "phone": "(843) 410-1406",
+      "hoursNote": "Open · Closes 9 PM",
+      "reviewQuote": "Really good customer service and fantastic food"
+    },
+    {
+      "brand": "Jimmy John's",
+      "address": "99 Westedge St Suite 1500",
+      "phone": "(843) 724-7771",
+      "hoursNote": "Open · Closes 9 PM",
+      "reviewQuote": "The food was good, and the ingredients were fresh."
+    },
+    {
+      "brand": "Jimmy John's",
+      "address": "1300 Savannah Hwy Unit 12",
+      "phone": "(843) 573-4735",
+      "hoursNote": "Open · Closes 9 PM",
+      "reviewQuote": "Consistently great sandwiches served quickly with friendly staff"
+    },
+    {
+      "brand": "Jimmy John's",
+      "area": "Mt Pleasant, SC",
+      "phone": "(843) 388-7012",
+      "hoursNote": "Open · Closes 9 PM",
+      "reviewQuote": "Ordered takeout online, everything came out perfectly."
+    },
+    {
+      "brand": "Chipotle Mexican Grill",
+      "area": "North Charleston, SC",
+      "phone": "(843) 747-6707",
+      "hoursNote": "Open · Closes 10 PM",
+      "service": ["Dine-in", "Takeout", "No-contact delivery"]
+    },
+    {
+      "brand": "Chipotle Mexican Grill",
+      "area": "North Charleston, SC",
+      "phone": "(843) 553-2106",
+      "hoursNote": "Open · Closes 11 PM",
+      "service": ["Dine-in", "Takeout", "No-contact delivery"]
+    },
+    {
+      "brand": "Chipotle Mexican Grill",
+      "phone": "(854) 214-6932",
+      "hoursNote": "Open · Closes 11 PM",
+      "service": ["Dine-in", "Drive-through", "No-contact delivery"]
+    },
+    {
+      "brand": "Chipotle Mexican Grill",
+      "address": "374 King St",
+      "phone": "(843) 577-2345",
+      "hoursNote": "Open · Closes 11 PM",
+      "service": ["Dine-in", "Takeout", "No-contact delivery"]
+    },
+    {
+      "brand": "Chipotle Mexican Grill",
+      "address": "975 Savannah Hwy",
+      "phone": "(854) 999-4231",
+      "hoursNote": "Open · Closes 11 PM",
+      "service": ["Dine-in", "Takeout", "No-contact delivery"]
+    },
+    {
+      "brand": "Chipotle Mexican Grill",
+      "area": "Ladson, SC",
+      "phone": "(843) 376-6818",
+      "hoursNote": "Open · Closes 11 PM",
+      "service": ["Dine-in", "Takeout", "Delivery"]
+    },
+    {
+      "brand": "Chipotle Mexican Grill",
+      "area": "Goose Creek, SC",
+      "phone": "(854) 300-4182",
+      "hoursNote": "Open · Closes 11 PM",
+      "service": ["Dine-in", "Drive-through", "No-contact delivery"]
+    },
+    {
+      "brand": "Chipotle Mexican Grill",
+      "area": "Mt Pleasant, SC",
+      "phone": "(843) 856-1170",
+      "hoursNote": "Open · Closes 11 PM",
+      "service": ["Dine-in", "Takeout", "No-contact delivery"]
+    },
+    {
+      "brand": "Famulari's Pizzeria",
+      "locationLabel": "Hanahan",
+      "area": "Hanahan, SC",
+      "phone": "(843) 572-7105",
+      "hoursNote": "Opens soon · 11 AM",
+      "reviewQuote": "I've been with famularis since there was only one In Summerville!"
+    },
+    {
+      "brand": "Famulari's Pizzeria",
+      "locationLabel": "West Ashley",
+      "address": "2408 Ashley River Rd",
+      "phone": "(843) 571-0555",
+      "hoursNote": "Opens soon · 11 AM",
+      "reviewQuote": "Mind blowing!"
+    },
+    {
+      "brand": "Famulari's Pizzeria",
+      "locationLabel": "Cainhoy",
+      "address": "1721 Clements Ferry Rd",
+      "phone": "(843) 972-8001",
+      "hoursNote": "Opens soon · 11 AM",
+      "reviewQuote": "Great for families"
+    },
+    {
+      "brand": "Famulari's Pizzeria",
+      "locationLabel": "Oakbrook",
+      "area": "Summerville, SC",
+      "phone": "(843) 832-2222",
+      "hoursNote": "Opens soon · 11 AM",
+      "reviewQuote": "Twenty minutes away but totally worth the drive"
+    },
+    {
+      "brand": "Fam's Brewing Co.",
+      "address": "1291 Folly Rd",
+      "phone": "(843) 225-4646",
+      "hoursNote": "Opens soon · 11 AM",
+      "reviewQuote": "You can see the pics."
+    },
+    {
+      "brand": "Famulari's Pizzeria",
+      "locationLabel": "Cane Bay",
+      "area": "Summerville, SC",
+      "phone": "(843) 809-5423",
+      "hoursNote": "Opens soon · 11 AM",
+      "reviewQuote": "Complete transformation from the previous management."
+    },
+    {
+      "brand": "Johnny's Garage",
+      "rating": 4.4,
+      "ratingCount": 199,
+      "priceRange": "$10-20",
+      "category": "Restaurant",
+      "address": "1256 Yeamans Hall Rd",
+      "hoursNote": "Closed · Opens 11:30 AM",
+      "service": ["Dine-in", "Takeout"],
+      "notService": ["No delivery"]
+    },
+    {
+      "brand": "Santi's Restaurante Mexicano",
+      "rating": 4.4,
+      "ratingCount": 1900,
+      "priceRange": "$10-20",
+      "category": "Mexican",
+      "address": "1302 Meeting St",
+      "description": "Mexican & Southwest food with margaritas"
+    },
+    {
+      "brand": "Santi's",
+      "locationLabel": "West Ashley",
+      "rating": 4.0,
+      "ratingCount": 287,
+      "priceRange": "$10-20",
+      "category": "Mexican",
+      "address": "1660 Savannah Hwy",
+      "service": ["Dine-in", "Takeout", "Delivery"]
+    },
+    {
+      "brand": "Santi's",
+      "locationLabel": "Mount Pleasant",
+      "rating": 4.1,
+      "ratingCount": 656,
+      "priceRange": "$10-20",
+      "category": "Mexican",
+      "area": "Mt Pleasant, SC",
+      "service": ["Dine-in", "Takeout", "Delivery"]
+    }
+  ]
+}

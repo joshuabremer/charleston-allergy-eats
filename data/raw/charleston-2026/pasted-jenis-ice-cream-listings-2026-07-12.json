@@ -1,0 +1,32 @@
+{
+  "source": "User-pasted Google Maps search results for Jeni's Splendid Ice Creams",
+  "capturedAt": "2026-07-12",
+  "notes": [
+    "User approved these locations.",
+    "Each entry is a distinct physical location and must not be merged with the other location of the same brand."
+  ],
+  "locations": [
+    {
+      "brand": "Jeni's Splendid Ice Creams",
+      "category": "Ice Cream",
+      "rating": 4.7,
+      "ratingCount": 1721,
+      "address": "501-A King St, Charleston, SC 29403",
+      "phone": "(843) 212-5113",
+      "hoursNote": "Closed · Opens 12 PM",
+      "summary": "Frozen treats in inventive flavors",
+      "service": ["Dine-in", "Takeout", "No-contact delivery"]
+    },
+    {
+      "brand": "Jeni's Splendid Ice Creams",
+      "category": "Ice Cream",
+      "rating": 3.9,
+      "ratingCount": 117,
+      "address": "1242 Belk Dr #101, Mt Pleasant, SC 29464",
+      "phone": "(843) 628-6824",
+      "hoursNote": "Closed · Opens 12 PM",
+      "summary": "Frozen treats in inventive flavors",
+      "service": ["Delivery"]
+    }
+  ]
+}

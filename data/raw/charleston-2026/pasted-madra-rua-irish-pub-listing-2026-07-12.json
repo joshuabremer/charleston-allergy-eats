@@ -1,0 +1,43 @@
+{
+  "source": "User-pasted Google Maps listing and menus for Madra Rua Irish Pub",
+  "capturedAt": "2026-07-12",
+  "notes": [
+    "User approved Madra Rua Irish Pub for both locations (Park Circle and Summerville).",
+    "Lunch, dinner, and brunch menus were pasted from the restaurant and analyzed.",
+    "Menu explicitly notes: 'We use peanut oil (no trans fat or cholesterol).'"
+  ],
+  "locations": [
+    {
+      "brand": "Madra Rua Irish Pub",
+      "category": "Bar",
+      "rating": 4.6,
+      "ratingCount": 1600,
+      "priceRange": "$20-30",
+      "distanceNote": "0.8 mi",
+      "address": "1034 E Montague Ave, N. Charleston, SC 29405",
+      "phone": "843-554-2522",
+      "description": "Authentic eats & ample beer selection",
+      "website": "madraruapub.com"
+    },
+    {
+      "brand": "Madra Rua Irish Pub",
+      "category": "Bar",
+      "rating": 4.6,
+      "ratingCount": 2200,
+      "priceRange": "$20-30",
+      "distanceNote": "13.2 mi",
+      "address": "2066 N Main St, Summerville, SC 29486",
+      "phone": "843-821-9434",
+      "description": "Shepherd's pie & soccer on TV",
+      "website": "madraruapub.com"
+    }
+  ],
+  "menuHighlights": [
+    "Traditional Irish fare: Irish stew, fish & chips, shepherd's pie, corned beef & cabbage, fisherman's pie",
+    "Sandwiches: Madra Rua beef burger, Rua Reuben, grilled chicken sandwich, prime rib of beef sandwich, pulled pork sandwich",
+    "Jumbo Wicklow wings with sauce/dry rub choices: Buffalo, Dry Ranch, Mango Habanero, BBQ, Lemon Pepper",
+    "Menu explicitly states: 'We use peanut oil (no trans fat or cholesterol).'",
+    "Weekend brunch: two egg breakfast, build your own omelet, breakfast bowls, benedicts, shrimp & grits, biscuits & gravy, BLT sandwiches"
+  ],
+  "allergyNote": "Kitchen uses peanut oil for frying (not a concern for this household, but noted for reference)."
+}

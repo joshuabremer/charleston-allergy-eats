@@ -1,0 +1,23 @@
+{
+  "source": "User-pasted Google Maps listing for Benny Rinaldi's",
+  "capturedAt": "2026-07-12",
+  "notes": [
+    "User approved this location and reported that the restaurant said, in person, that they have a nut-free kitchen.",
+    "Exact address and coordinates confirmed from the pasted Google Maps listing."
+  ],
+  "locations": [
+    {
+      "brand": "Benny Rinaldi's",
+      "category": "Pizza restaurant",
+      "rating": 4.3,
+      "ratingCount": 182,
+      "priceRange": "$10-20 per person",
+      "address": "1079 E Montague Ave Ste 100, North Charleston, SC 29405",
+      "phone": "(843) 900-3885",
+      "website": "bennysva.com",
+      "hoursNote": "Open · Closes 11 PM",
+      "service": ["Dine-in", "Takeout", "Delivery"],
+      "allergyNote": "User reported the restaurant said in person that they have a nut-free kitchen."
+    }
+  ]
+}
