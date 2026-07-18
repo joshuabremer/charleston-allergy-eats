@@ -1,0 +1,81 @@
+{
+  "source": "User-pasted La Hacienda Mexican Restaurant online ordering menu, stated by user to apply to all La Hacienda locations in this project.",
+  "capturedAt": "2026-07-18",
+  "menuText": {
+    "featuredItems": [
+      "Carnitas ($17.00)",
+      "Milanesa ($17.00)",
+      "Seafood Combo ($19.95)",
+      "Tour of Mexico ($15.00)",
+      "Chimichanga ($14.00)",
+      "Carne Asada ($18.50)",
+      "Chori-Pollo ($16.00)",
+      "Chicken and Shrimp Fajitas ($19.00)",
+      "Burritos Fajita ($15.50)",
+      "Texas Rice ($22.95)",
+      "Quesadillas Mexicanas ($15.00)",
+      "Pollo a la Piña ($19.95)",
+      "Shrimp Fajitas ($20.50)",
+      "Tacos de Camaron (3) ($15.50)",
+      "Pork Carnitas Tacos ($14.50)",
+      "Texas Dip ($13.50)",
+      "Cheese dip ($7.00) - #2 Most liked",
+      "Fajitas Vegetarian ($15.00)",
+      "Chilaquiles ($13.00)",
+      "Special Rice ($16.00)",
+      "La Hacienda Nachos ($13.00)",
+      "One Enchilada, Rice and Beans ($7.00)",
+      "Pizzabirria ($17.00)",
+      "One Cheese Quesadilla and Rice ($7.00)",
+      "Taco Salad ($10.00)"
+    ],
+    "sections": [
+      "Dips - best cheese dip",
+      "Appetizers",
+      "Soups",
+      "Sopes - corn-flour cakes, lightly fried, topped with beans, lettuce, mild green tomatillo sauce, queso fresco, avocado slice, sour cream",
+      "Guacamoles - best guacamole in town",
+      "Taqueria - order of three tacos with rice and refried or black beans",
+      "Tacos Side Orders",
+      "Steaks",
+      "Salads",
+      "Nachos - made with cheese sauce",
+      "Burritos",
+      "Enchiladas - add cheese sauce for additional charge",
+      "Quesadillas - add cheese sauce for additional charge",
+      "Chicken - add cheese sauce for additional charge",
+      "Fajitas - cooked with onions, green and red bell peppers; served with rice, beans, lettuce, guacamole, tomatoes, sour cream",
+      "Specialty Fajitas",
+      "Pork",
+      "Seafood - add cheese sauce for additional charge",
+      "Chimichangas - add cheese sauce for additional charge",
+      "Traditional Molcajete - local favorite",
+      "House Specials - add cheese sauce for additional price",
+      "Chiles Rellenos - add cheese sauce for additional price",
+      "Make Your Own Combo - includes rice and beans",
+      "Vegetarian - add cheese sauce for additional price",
+      "Side Orders",
+      "Chips & Salsa To-Go"
+    ],
+    "desserts": [
+      "Churros with Ice Cream ($6.75) - fried twisted dough with sugar, cinnamon, and honey",
+      "NY Cheesecake ($5.95) - served with strawberry topping",
+      "Ultimate Chocolate Cake ($7.25) - served over a hot flat iron cast with ice cream and sopapilla",
+      "Fried Ice Cream ($5.50) - crispy-coated ice cream topped with whipped cream and a strawberry",
+      "Churro cart ($12.00) - fried twisted dough with sugar, cinnamon and honey"
+    ],
+    "kidsMenu": [
+      "1. One Burrito and One Taco ($7.00)",
+      "2. One Taco and One Enchilada ($7.00)",
+      "3. One Enchilada, Rice and Beans ($7.00)",
+      "4. Chicken Fingers and Fries ($7.00)",
+      "5. One Cheese Quesadilla and Rice ($7.00)",
+      "6. Corn Dog and Fries ($7.00)",
+      "7. Nacho Cheese ($7.00)"
+    ],
+    "disclaimers": [
+      "*Foods cooked to order, consuming raw or undercooked meats, poultry, seafood, shellfish or eggs may increase your risk for foodborne illnesses, especially if you have certain medical conditions.",
+      "To our guests with food sensitivity or allergies: La Hacienda Mexican restaurants cannot ensure that menu items do not contain ingredients that might cause an allergic reaction."
+    ]
+  }
+}

@@ -18,6 +18,8 @@
 ## Curation workflow
 
 - When the user pastes a new restaurant listing/menu, save the raw text under `data/raw/charleston-2026/` first, then add a curated entry to `restaurants.ts` starting at `ready-to-review`.
+- When the user gives a Google Maps share link (`https://maps.app.goo.gl/...`) or a Google Place ID instead of pasted text, run `npm run lookup -- "<link or --id <placeId>>"` (see `scripts/lookup-restaurant.ts`) to fetch name/address/phone/website/rating/hours/coordinates via the Google Places API, then save its output as a raw JSON file under `data/raw/charleston-2026/` and add the curated `restaurants.ts` entry from the script's suggested fragment. If a text search returns multiple candidates, confirm the right match (using the printed list and coordinates) before pasting the entry — re-run with `--id` for a different match if needed. Requires `GOOGLE_MAPS_API_KEY` in `.env` with "Places API (New)" enabled.
+- Different physical locations of the same restaurant chain (even with an identical name) are separate restaurants — give each its own slug/entry and do not merge them, even if a Google Maps share link resolves to a generic chain page.
 - Whenever a restaurant and its menu are provided together (or a menu is added/updated for an existing restaurant), always analyze the menu for allergy accommodations and update that restaurant's menu analysis (`menuFlags` / notes) in the same change — don't just save the raw menu and leave the analysis for later.
 - Only flip a restaurant to `approved` when the user explicitly says so (e.g. "X is approved").
 - Do not add restaurants to the curated list unless the user provides them or explicitly asks.
@@ -36,6 +38,7 @@
 
 - Menu links live in the main resource/links section alongside other links (Website, Order, etc.).
 - Curated menu analysis goes in a separate "Menu analysis" section (`menuFlags` on the relevant resource) rather than mixed into general review evidence or quotes.
+- The detail page (`RestaurantDetail.svelte`) only renders the "Menu analysis" section from `menuFlags` on resources with `kind: 'menu'` — flags placed on a `kind: 'website'`/other resource are silently dropped from the page. If a restaurant has no dedicated menu link/resource yet, add one with `kind: 'menu'` (even if it points at the same site as the Website link) so `menuFlags` has somewhere to attach and render.
 - Use `✅` for green flags, `⚠️` for yellow flags, and `🚩` for red flags. Keep notes menu-specific and focused on the current allergy scope, not generic allergen disclaimers.
 
 ## Detail page

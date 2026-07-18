@@ -21,10 +21,22 @@ There is no in-app editing UI. This is a personal research tool — all data cha
 
 Typical workflow when adding a new restaurant:
 
-1. Paste the listing/menu info in chat.
+1. Paste the listing/menu info in chat, or hand Copilot a Google Maps share link (`https://maps.app.goo.gl/...`) or Place ID — see `npm run lookup` below.
 2. It gets saved as a raw JSON file under `data/raw/charleston-2026/`.
 3. A curated entry is added to `restaurants.ts` (with a `resources`/`quotes`/`notes` summary), starting at `ready-to-review`.
 4. Once reviewed, the decision is flipped to `approved` (or `rejected`, with a note) in `restaurant-decisions.json`.
+
+### Looking up a restaurant by name or Google Maps link
+
+`scripts/lookup-restaurant.ts` calls the Google Places API (New) to fetch a restaurant's name, address, phone, website, rating, hours, and coordinates in one call, and prints a ready-to-edit `restaurants.ts` entry fragment:
+
+```sh
+npm run lookup -- "Chipotle Mexican Grill, 4953 Centre Pointe Dr, North Charleston SC"
+npm run lookup -- "https://maps.app.goo.gl/..."   # paste a Google Maps share link directly
+npm run lookup -- --id ChIJ...                    # fetch details for a known Google Place ID
+```
+
+Requires `GOOGLE_MAPS_API_KEY` in `.env` with the "Places API (New)" enabled (same key used by `scripts/geocode.ts`). A text search may return multiple candidates — review the printed matches before pasting the suggested entry into `restaurants.ts`, and re-run with `--id` to pull full details for a different match if the top one isn't right.
 
 ## Development
 

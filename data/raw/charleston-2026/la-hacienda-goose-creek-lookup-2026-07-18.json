@@ -1,0 +1,15 @@
+{
+  "source": "npm run lookup (Google Places API) via Google Maps share link https://maps.app.goo.gl/YuNEVFHBhErjiNPm8",
+  "capturedAt": "2026-07-18",
+  "place": {
+    "name": "La Hacienda of Goose Creek",
+    "address": "205 N Goose Creek Blvd, Goose Creek, SC 29445",
+    "phone": "(843) 569-3834",
+    "website": "http://www.lahaciendamexrestaurants.com/",
+    "rating": 3.9,
+    "userRatingCount": 1355,
+    "placeId": "ChIJIXpFjeVg_ogR7a-ydLC6wAk",
+    "latitude": 33.0032388,
+    "longitude": -80.0393156
+  }
+}

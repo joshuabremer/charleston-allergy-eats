@@ -1,0 +1,15 @@
+{
+  "source": "npm run lookup (Google Places API) via Google Maps share link https://maps.app.goo.gl/XgXM2M1ZZRusKSdJ8",
+  "capturedAt": "2026-07-18",
+  "place": {
+    "name": "La Hacienda Mexican Restaurant",
+    "address": "6322 Rivers Ave, North Charleston, SC 29418",
+    "phone": "(843) 569-6844",
+    "website": "http://www.lahaciendamexrestaurants.com/",
+    "rating": 3.9,
+    "userRatingCount": 1101,
+    "placeId": "ChIJqfbck5tj_ogReQvq5jPGx0M",
+    "latitude": 32.9112174,
+    "longitude": -80.0234953
+  }
+}

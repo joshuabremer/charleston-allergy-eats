@@ -1,0 +1,15 @@
+{
+  "source": "npm run lookup (Google Places API) via Google Maps share link https://maps.app.goo.gl/cAm4qfneyDEg616q6",
+  "capturedAt": "2026-07-18",
+  "place": {
+    "name": "La Hacienda Mexican Restaurant",
+    "address": "1205 N Main St, Summerville, SC 29483",
+    "phone": "(843) 873-0747",
+    "website": "http://www.lahaciendamexrestaurants.com/",
+    "rating": 4,
+    "userRatingCount": 1245,
+    "placeId": "ChIJh-2w0DuL_ogRLMVlZyBYdrM",
+    "latitude": 33.034399,
+    "longitude": -80.159218
+  }
+}

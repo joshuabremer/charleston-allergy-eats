@@ -1,0 +1,41 @@
+{
+  "source": "npm run lookup (Google Places API) via Google Maps share link https://maps.app.goo.gl/2igYRoiombqnpYRm6, plus user-pasted bagel menu (bagels made in-house).",
+  "capturedAt": "2026-07-18",
+  "place": {
+    "name": "PopUp Bagels",
+    "address": "83 Mary St, Charleston, SC 29403",
+    "phone": "(855) 747-6347",
+    "website": "https://popupbagels.com/",
+    "rating": 4.2,
+    "userRatingCount": 13,
+    "placeId": "ChIJ4TB1NKN7_ogRPHyYgeUf59Q",
+    "latitude": 32.7905353,
+    "longitude": -79.9388461
+  },
+  "menuText": {
+    "bagelBundles": [
+      "3-Bagels + Schmear",
+      "6-Bagels + Schmear",
+      "12-Bagels + 2 Schmears",
+      "30-Bagels + 5 Schmears",
+      "Bagels sold by the bag",
+      "Pre-order (dozen only)",
+      "Delivery available for all sizes"
+    ],
+    "buildYourBagBagelTypes": ["Plain", "Everything", "Poppy Seed", "Salt", "Sesame"],
+    "schmears": {
+      "creamCheese": ["Plain", "Scallion"],
+      "butter": ["Salted Butter"],
+      "weeklySpecials": ["Jalapeño Popper Cream Cheese", "Garlic Rosemary Butter", "More..."]
+    },
+    "extrasForBagel": ["Smoked Salmon 4oz/8oz"],
+    "drinks": [
+      "Natalie's Orange Juice",
+      "Natalie's Lemonade",
+      "Natalie's Strawberry Lemonade",
+      "Hot Drip Coffee",
+      "La Colombe Cold Brew",
+      "PopUp Bagels Water"
+    ]
+  }
+}

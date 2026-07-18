@@ -1,0 +1,15 @@
+{
+  "source": "npm run lookup (Google Places API) via Google Maps share link https://maps.app.goo.gl/Bkfw6MSUhXrkcjvq9",
+  "capturedAt": "2026-07-18",
+  "place": {
+    "name": "La Hacienda Mexican Restaurant",
+    "address": "3050 S Morgans Point Rd, Mt Pleasant, SC 29466",
+    "phone": "(843) 388-7636",
+    "website": "http://www.lahaciendamexrestaurants.com/",
+    "rating": 4.1,
+    "userRatingCount": 869,
+    "placeId": "ChIJpVf1sRpt_ogRHDAsMToXOaM",
+    "latitude": 32.8621292,
+    "longitude": -79.785675
+  }
+}

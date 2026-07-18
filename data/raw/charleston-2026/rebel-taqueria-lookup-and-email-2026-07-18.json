@@ -1,0 +1,16 @@
+{
+  "source": "npm run lookup (Google Places API) via Google Maps share link https://maps.app.goo.gl/Ba8Qyna995cSjajEA, plus user-forwarded email reply from Lewis Kesaris (Chef/Owner) <taco@rebeltaqueria.com>, Mon, May 25, 2:17 PM, in response to a tree nut allergy inquiry.",
+  "capturedAt": "2026-07-18",
+  "place": {
+    "name": "Rebel Taqueria",
+    "address": "1809 Reynolds Ave, North Charleston, SC 29405",
+    "phone": "(843) 619-0104",
+    "website": "http://rebeltaqueria.com/",
+    "rating": 4.7,
+    "userRatingCount": 946,
+    "placeId": "ChIJGf8ArSdl_ogRN9Iyk0AkjZQ",
+    "latitude": 32.8589944,
+    "longitude": -79.9687377
+  },
+  "emailText": "No tree nuts are used in any of our recipes.\n\nLewis Kesaris (Chef/Owner)\nRebel Taquería\n8434521497\nTaco@RebelTaqueria.com"
+}

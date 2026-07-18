@@ -42,6 +42,16 @@ const NO_BULL_BURGER_BAR_NOTE =
 	'Added at user request as a place to review (not yet approved), looked up via the Google Places API from a shared Google Maps link (https://maps.app.goo.gl/6CVDaWaQTFXfuL2N8) rather than a pasted listing. No menu or allergen info analyzed yet.';
 const NO_BULL_BURGER_BAR_MENU_NOTE =
 	'Full menu pasted and analyzed; see menu analysis on the Website link. Raw source: data/raw/charleston-2026/no-bull-burger-bar-menu-2026-07-12.json.';
+const LA_HACIENDA_MENU_NOTE =
+	'Full online ordering menu pasted and analyzed, stated by user to apply across all La Hacienda locations. Raw source: data/raw/charleston-2026/la-hacienda-menu-2026-07-18.json. Menu prints only a generic food-safety/allergy disclaimer with no dedicated allergen guide.';
+const LA_HACIENDA_LOOKUP_NOTE =
+	'Added at user request as a place to review (not yet approved), looked up via the Google Places API from a shared Google Maps link rather than a pasted listing.';
+const POPUP_BAGELS_NOTE =
+	'Added at user request as a place to review (not yet approved), looked up via the Google Places API from a shared Google Maps link. Full bagel/schmear/drinks menu pasted and analyzed; user noted everything is made in house. Raw source: data/raw/charleston-2026/popup-bagels-listing-and-menu-2026-07-18.json.';
+const SANTIS_NUT_FREE_NOTE =
+	"Restaurant owner Candy Falcon replied by email confirming Santi's is nut-free and uses no tree nuts; applies to all Santi's locations in this project. Raw source: data/raw/charleston-2026/santis-nut-free-email-2026-04-19.json.";
+const REBEL_TAQUERIA_NOTE =
+	'Added at user request, looked up via the Google Places API from a shared Google Maps link. Owner/chef Lewis Kesaris replied by email confirming no tree nuts are used in any recipes. Got email response. Raw source: data/raw/charleston-2026/rebel-taqueria-lookup-and-email-2026-07-18.json.';
 
 export const restaurants: Restaurant[] = [
 	{
@@ -440,8 +450,13 @@ export const restaurants: Restaurant[] = [
 		latitude: 32.809,
 		longitude: -79.9537,
 		resources: [],
-		quotes: [],
-		notes: [NOT_YET_RESEARCHED_NOTE, RAW_SOURCE_NOTE]
+		quotes: [
+			{
+				quote: 'We do not use any kind of tree nuts. We are nut free.',
+				sourceLabel: "Email from Candy Falcon, Santi's (Apr 19)"
+			}
+		],
+		notes: [NOT_YET_RESEARCHED_NOTE, RAW_SOURCE_NOTE, SANTIS_NUT_FREE_NOTE]
 	},
 	{
 		slug: 'santis-west-ashley',
@@ -456,8 +471,13 @@ export const restaurants: Restaurant[] = [
 		latitude: 32.7933,
 		longitude: -80.0202,
 		resources: [],
-		quotes: [],
-		notes: [NOT_YET_RESEARCHED_NOTE, RAW_SOURCE_NOTE]
+		quotes: [
+			{
+				quote: 'We do not use any kind of tree nuts. We are nut free.',
+				sourceLabel: "Email from Candy Falcon, Santi's (Apr 19)"
+			}
+		],
+		notes: [NOT_YET_RESEARCHED_NOTE, RAW_SOURCE_NOTE, SANTIS_NUT_FREE_NOTE]
 	},
 	{
 		slug: 'santis-mount-pleasant',
@@ -472,8 +492,13 @@ export const restaurants: Restaurant[] = [
 		latitude: 32.7910646,
 		longitude: -79.8531031,
 		resources: [],
-		quotes: [],
-		notes: [NOT_YET_RESEARCHED_NOTE, RAW_SOURCE_NOTE]
+		quotes: [
+			{
+				quote: 'We do not use any kind of tree nuts. We are nut free.',
+				sourceLabel: "Email from Candy Falcon, Santi's (Apr 19)"
+			}
+		],
+		notes: [NOT_YET_RESEARCHED_NOTE, RAW_SOURCE_NOTE, SANTIS_NUT_FREE_NOTE]
 	},
 	{
 		slug: 'kickin-chicken-sam-rittenberg',
@@ -1447,5 +1472,262 @@ export const restaurants: Restaurant[] = [
 		],
 		quotes: [],
 		notes: [NO_BULL_BURGER_BAR_NOTE, NO_BULL_BURGER_BAR_MENU_NOTE]
+	},
+	{
+		slug: 'la-hacienda-international-blvd',
+		name: 'La Hacienda Mexican Restaurant',
+		neighborhood: 'North Charleston',
+		address: '5070 International Blvd #121, North Charleston, SC 29418',
+		phone: '(843) 746-8699',
+		rating: 4,
+		googlePlaceId: 'ChIJXcET_1Bj_ogR6ETNSmPrVXs',
+		type: 'Sit-down',
+		cuisineSummary: 'Mexican',
+		summary: 'Mexican restaurant location in North Charleston off International Blvd.',
+		meals: ['Lunch', 'Dinner'],
+		latitude: 32.867886,
+		longitude: -80.017445,
+		resources: [
+			{
+				label: 'Website',
+				href: 'http://www.lahaciendamexrestaurants.com/',
+				kind: 'menu',
+				menuFlags: [
+					{
+						tone: 'green',
+						note: 'No tree nut ingredients (walnuts, pecans, cashews, pistachios, hazelnuts, etc.) appear anywhere on the menu — it is a Tex-Mex menu of beef/chicken/pork/seafood, cheese, rice, beans, and tortillas.'
+					},
+					{
+						tone: 'yellow',
+						note: 'Fried desserts (churros, fried ice cream) and other fried items likely share fryers/kitchen equipment; menu offers no dedicated allergen guide beyond a generic disclaimer, so confirm any cross-contact concerns with staff.'
+					}
+				]
+			}
+		],
+		quotes: [],
+		notes: [LA_HACIENDA_MENU_NOTE]
+	},
+	{
+		slug: 'la-hacienda-rivers-ave',
+		name: 'La Hacienda Mexican Restaurant',
+		neighborhood: 'North Charleston',
+		address: '6322 Rivers Ave, North Charleston, SC 29418',
+		phone: '(843) 569-6844',
+		rating: 3.9,
+		googlePlaceId: 'ChIJqfbck5tj_ogReQvq5jPGx0M',
+		type: 'Sit-down',
+		cuisineSummary: 'Mexican',
+		summary: 'Mexican restaurant location in North Charleston on Rivers Ave.',
+		meals: ['Lunch', 'Dinner'],
+		latitude: 32.9112174,
+		longitude: -80.0234953,
+		resources: [
+			{
+				label: 'Website',
+				href: 'http://www.lahaciendamexrestaurants.com/',
+				kind: 'menu',
+				menuFlags: [
+					{
+						tone: 'green',
+						note: 'No tree nut ingredients (walnuts, pecans, cashews, pistachios, hazelnuts, etc.) appear anywhere on the menu — it is a Tex-Mex menu of beef/chicken/pork/seafood, cheese, rice, beans, and tortillas.'
+					},
+					{
+						tone: 'yellow',
+						note: 'Fried desserts (churros, fried ice cream) and other fried items likely share fryers/kitchen equipment; menu offers no dedicated allergen guide beyond a generic disclaimer, so confirm any cross-contact concerns with staff.'
+					}
+				]
+			}
+		],
+		quotes: [],
+		notes: [LA_HACIENDA_MENU_NOTE]
+	},
+	{
+		slug: 'la-hacienda-resolute-way',
+		name: 'La Hacienda Mexican Restaurant',
+		neighborhood: 'North Charleston',
+		address: '8461 Resolute Way, North Charleston, SC 29420',
+		phone: '(843) 767-0301',
+		rating: 4,
+		googlePlaceId: 'ChIJI4fxyc6J_ogRinZFKTOrfF4',
+		type: 'Sit-down',
+		cuisineSummary: 'Mexican',
+		summary: 'Mexican restaurant location in North Charleston off Resolute Way.',
+		meals: ['Lunch', 'Dinner'],
+		latitude: 32.9156945,
+		longitude: -80.1127077,
+		resources: [
+			{
+				label: 'Website',
+				href: 'http://www.lahaciendamexrestaurants.com/',
+				kind: 'menu',
+				menuFlags: [
+					{
+						tone: 'green',
+						note: 'No tree nut ingredients (walnuts, pecans, cashews, pistachios, hazelnuts, etc.) appear anywhere on the menu — it is a Tex-Mex menu of beef/chicken/pork/seafood, cheese, rice, beans, and tortillas.'
+					},
+					{
+						tone: 'yellow',
+						note: 'Fried desserts (churros, fried ice cream) and other fried items likely share fryers/kitchen equipment; menu offers no dedicated allergen guide beyond a generic disclaimer, so confirm any cross-contact concerns with staff.'
+					}
+				]
+			}
+		],
+		quotes: [],
+		notes: [LA_HACIENDA_MENU_NOTE]
+	},
+	{
+		slug: 'la-hacienda-goose-creek',
+		name: 'La Hacienda of Goose Creek',
+		neighborhood: 'Goose Creek',
+		address: '205 N Goose Creek Blvd, Goose Creek, SC 29445',
+		phone: '(843) 569-3834',
+		rating: 3.9,
+		googlePlaceId: 'ChIJIXpFjeVg_ogR7a-ydLC6wAk',
+		type: 'Sit-down',
+		cuisineSummary: 'Mexican',
+		summary: 'Mexican restaurant location in Goose Creek.',
+		meals: ['Lunch', 'Dinner'],
+		latitude: 33.0032388,
+		longitude: -80.0393156,
+		resources: [
+			{
+				label: 'Website',
+				href: 'http://www.lahaciendamexrestaurants.com/',
+				kind: 'menu',
+				menuFlags: [
+					{
+						tone: 'green',
+						note: 'No tree nut ingredients (walnuts, pecans, cashews, pistachios, hazelnuts, etc.) appear anywhere on the menu — it is a Tex-Mex menu of beef/chicken/pork/seafood, cheese, rice, beans, and tortillas.'
+					},
+					{
+						tone: 'yellow',
+						note: 'Fried desserts (churros, fried ice cream) and other fried items likely share fryers/kitchen equipment; menu offers no dedicated allergen guide beyond a generic disclaimer, so confirm any cross-contact concerns with staff.'
+					}
+				]
+			}
+		],
+		quotes: [],
+		notes: [LA_HACIENDA_LOOKUP_NOTE, LA_HACIENDA_MENU_NOTE]
+	},
+	{
+		slug: 'la-hacienda-mt-pleasant',
+		name: 'La Hacienda Mexican Restaurant',
+		neighborhood: 'Mt Pleasant',
+		address: '3050 S Morgans Point Rd, Mt Pleasant, SC 29466',
+		phone: '(843) 388-7636',
+		rating: 4.1,
+		googlePlaceId: 'ChIJpVf1sRpt_ogRHDAsMToXOaM',
+		type: 'Sit-down',
+		cuisineSummary: 'Mexican',
+		summary: 'Mexican restaurant location in Mt Pleasant.',
+		meals: ['Lunch', 'Dinner'],
+		latitude: 32.8621292,
+		longitude: -79.785675,
+		resources: [
+			{
+				label: 'Website',
+				href: 'http://www.lahaciendamexrestaurants.com/',
+				kind: 'menu',
+				menuFlags: [
+					{
+						tone: 'green',
+						note: 'No tree nut ingredients (walnuts, pecans, cashews, pistachios, hazelnuts, etc.) appear anywhere on the menu — it is a Tex-Mex menu of beef/chicken/pork/seafood, cheese, rice, beans, and tortillas.'
+					},
+					{
+						tone: 'yellow',
+						note: 'Fried desserts (churros, fried ice cream) and other fried items likely share fryers/kitchen equipment; menu offers no dedicated allergen guide beyond a generic disclaimer, so confirm any cross-contact concerns with staff.'
+					}
+				]
+			}
+		],
+		quotes: [],
+		notes: [LA_HACIENDA_LOOKUP_NOTE, LA_HACIENDA_MENU_NOTE]
+	},
+	{
+		slug: 'la-hacienda-summerville',
+		name: 'La Hacienda Mexican Restaurant',
+		neighborhood: 'Summerville',
+		address: '1205 N Main St, Summerville, SC 29483',
+		phone: '(843) 873-0747',
+		rating: 4,
+		googlePlaceId: 'ChIJh-2w0DuL_ogRLMVlZyBYdrM',
+		type: 'Sit-down',
+		cuisineSummary: 'Mexican',
+		summary: 'Mexican restaurant location in Summerville.',
+		meals: ['Lunch', 'Dinner'],
+		latitude: 33.034399,
+		longitude: -80.159218,
+		resources: [
+			{
+				label: 'Website',
+				href: 'http://www.lahaciendamexrestaurants.com/',
+				kind: 'menu',
+				menuFlags: [
+					{
+						tone: 'green',
+						note: 'No tree nut ingredients (walnuts, pecans, cashews, pistachios, hazelnuts, etc.) appear anywhere on the menu — it is a Tex-Mex menu of beef/chicken/pork/seafood, cheese, rice, beans, and tortillas.'
+					},
+					{
+						tone: 'yellow',
+						note: 'Fried desserts (churros, fried ice cream) and other fried items likely share fryers/kitchen equipment; menu offers no dedicated allergen guide beyond a generic disclaimer, so confirm any cross-contact concerns with staff.'
+					}
+				]
+			}
+		],
+		quotes: [],
+		notes: [LA_HACIENDA_LOOKUP_NOTE, LA_HACIENDA_MENU_NOTE]
+	},
+	{
+		slug: 'popup-bagels-83-mary-st',
+		name: 'PopUp Bagels',
+		neighborhood: 'Charleston',
+		address: '83 Mary St, Charleston, SC 29403',
+		phone: '(855) 747-6347',
+		rating: 4.2,
+		googlePlaceId: 'ChIJ4TB1NKN7_ogRPHyYgeUf59Q',
+		type: 'Cafe',
+		cuisineSummary: 'Bagels',
+		summary: 'Bagel shop making everything in house, with build-your-own bags, schmears, and coffee/drinks.',
+		meals: ['Breakfast', 'Lunch'],
+		latitude: 32.7905353,
+		longitude: -79.9388461,
+		resources: [
+			{
+				label: 'Website',
+				href: 'https://popupbagels.com/',
+				kind: 'menu',
+				menuFlags: [
+					{
+						tone: 'green',
+						note: 'No tree nut ingredients (walnuts, pecans, cashews, pistachios, hazelnuts, etc.) appear anywhere on the menu — bagels (plain, everything, poppy seed, salt, sesame), cream cheese/butter schmears, smoked salmon, and drinks.'
+					}
+				]
+			}
+		],
+		quotes: [],
+		notes: [POPUP_BAGELS_NOTE]
+	},
+	{
+		slug: 'rebel-taqueria',
+		name: 'Rebel Taqueria',
+		neighborhood: 'North Charleston',
+		address: '1809 Reynolds Ave, North Charleston, SC 29405',
+		phone: '(843) 619-0104',
+		rating: 4.7,
+		googlePlaceId: 'ChIJGf8ArSdl_ogRN9Iyk0AkjZQ',
+		type: 'Fast casual',
+		cuisineSummary: 'Mexican',
+		summary: 'Taqueria in North Charleston.',
+		meals: ['Lunch', 'Dinner'],
+		latitude: 32.8589944,
+		longitude: -79.9687377,
+		resources: [{ label: 'Website', href: 'http://rebeltaqueria.com/', kind: 'website' }],
+		quotes: [
+			{
+				quote: 'No tree nuts are used in any of our recipes.',
+				sourceLabel: 'Email from Lewis Kesaris (Chef/Owner), Rebel Taqueria (May 25)'
+			}
+		],
+		notes: [REBEL_TAQUERIA_NOTE]
 	}
 ];

@@ -1,0 +1,15 @@
+{
+  "source": "npm run lookup (Google Places API) via Google Maps share link https://maps.app.goo.gl/QBTm7tVhs47P7QwZA",
+  "capturedAt": "2026-07-18",
+  "place": {
+    "name": "La Hacienda Mexican Restaurant",
+    "address": "8461 Resolute Way, North Charleston, SC 29420",
+    "phone": "(843) 767-0301",
+    "website": "http://www.lahaciendamexrestaurants.com/",
+    "rating": 4,
+    "userRatingCount": 1946,
+    "placeId": "ChIJI4fxyc6J_ogRinZFKTOrfF4",
+    "latitude": 32.9156945,
+    "longitude": -80.1127077
+  }
+}
